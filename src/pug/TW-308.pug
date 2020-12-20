@@ -1,0 +1,143 @@
+extends includes/base.pug
+block variables
+    - var productName = 'TW-308'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/TW-308/cover.png" alt="")
+                ul.img-list.flex-box
+                    li
+                        img(src="images/product/TW-308/cover.png" alt="")
+                .name 桌上型鹼性離子水生成器 TW-308
+                .detail
+                    ul
+                        li 日本家庭保健 NO.1  鹼性離子水生成器
+                        li 可切換 7 段酸鹼值，適合全家人的飲水習慣
+                        li 濾心智慧提醒更換，安全又貼心
+                        li 大型液晶表示搭載
+                    div
+                        - var n = 1;
+                        while n < 19
+                            div
+                                img(src=`images/product/TW-308/${n++}.jpg` alt="產品介紹")
+                    .ct
+                        .price
+                            | 建議售價：26800元
+                        a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/TW-308/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/TW-308/")
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品描述
+                p 
+                    | 【台灣設計】外型簡約、直覺式操作大介面。
+                    br
+                    | 【日本技術】電解槽大、品質穩定，可連續電解出水 30 分鐘。
+                p
+                    | 【飲用鹼性離子水(水素)水 5 大好處】
+                    br
+                    | 富含負電位水素(氫)分子排除體內自由基。
+                    br
+                    | 鹼性水質幫助調整體質。
+                    br
+                    | 小分子團水易吸收。
+                    br
+                    | 礦物質離子化好吸收。
+                    br
+                    | 潔淨不含氯氣/細菌/雜質/重金屬。
+                p
+                    | 【可生成多段pH酸鹼值電解水素水】
+                    br
+                    | 鹼性水 pH8.0 ~ 9.5 日常保健飲用。
+                    br
+                    | 酸性水 pH6.0 ~ 6.5 洗顏美容收斂。
+                    br
+                    | 中性水服藥 pH7.0、幼兒泡牛奶。
+                    br
+                    | 鹼性水 pH10.0 (無刺激性) 清洗蔬果去農藥殘留
+                p
+                    | 【保養及維護】
+                    br
+                    | 建議使用 3 年以上，需回原廠進行保養維護，將清洗電解槽、更換管線零配件。未使用靜置 2 周以上，使用前請先手動逆洗 30 秒 - 60 秒，並排放水 10 - 15 分鐘，若仍有狀況需回原廠進行保養維護，靜置一個月以上可另行預約客服 0800-090-881 到府酸洗及管線檢查。
+            .main-box
+                h5 商品內容
+                p 鹼性離子水生成器主機、本體濾心1顆、無鉛酸性龍頭、壁面固定零件組、進出水軟管、商品說明書、酸性水龍頭 (LF 無鉛國家認證)、pH檢測液、一年保證書。
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 電源
+                        td AC110V
+                    tr
+                        td 尺寸
+                        td W21CM*D13CM*H29CM
+                    tr
+                        td 重量
+                        td 未入水時約4.5KG
+                    tr
+                        td 能量管
+                        td 陶瓷鍛燒（遠紅外線）
+                    tr
+                        td 電解方式
+                        td 水道水過濾供給連續生成
+                    tr
+                        td 電解能力切換
+                        td 鹼性8段、中性1段 、酸性4段
+                    tr
+                        td 洗淨方式
+                        td 自動或手動
+                    tr
+                        td 連續使用電解時間
+                        td 30分鐘
+                    tr
+                        td 電機洗淨
+                        td 30秒
+                    tr
+                        td 適用水壓
+                        td 0.5KG~3.5KG
+                    tr
+                        td 適用水源
+                        td 自來水
+                    tr
+                        td 使用最高溫度
+                        td 40°C
+                    tr
+                        td 保護裝置
+                        td 二斷保險絲過熱過載
+                .align-center
+                    a(href="qa.html")
+                        .action-btn
+                            i.far.fa-question-circle  常見問題
+                    a(href="https://drive.google.com/open?id=1PxJGNrIYBFJFSIFFcbSRElQNYvYs14X4")
+                        .action-btn
+                            i.fal.fa-wrench  操作手冊
+            .main-box
+                h5 安裝實例
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/TW308WEB.jpg" alt="")
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/%E5%B7%9D%E6%A5%AD-%E6%9D%8E%E7%8F%AE%E7%8F%8A%20(1).JPG" alt="")
+                    .flex-2
+            .main-box
+                h5 週邊配件
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/IMG_4551.jpg" alt="")
+                        p TW-308 主體濾心
+                    .flex-2
+                        img(src="images/product/accessories/2s.png" alt="OMAMORI - 2S")
+                        p OMAMORI - 2S
+                    .flex-2
+                        img(src="images/product/accessories/3s.png" alt="OMAMORI - 3S")
+                        p OMAMORI - 3S

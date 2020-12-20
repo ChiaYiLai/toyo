@@ -1,0 +1,114 @@
+extends includes/base.pug
+block variables
+    - var rakutenUrl = 'https://www.rakuten.com.tw/shop/toyo-autech/?l-id=tw_product_shop'
+
+block content
+    .main
+        .wave-container
+            svg.waves(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto")
+                defs
+                    path#gentle-wave(d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z")
+                g.parallax
+                    use(xlink:href="#gentle-wave" x="48" y="3" fill="#4171aa")
+                    use(xlink:href="#gentle-wave" x="48" y="5" fill="#78cbc5")
+                    use(xlink:href="#gentle-wave" x="48" y="7" fill="#cccccc")
+        .main-container
+            .main-title
+                .title 最新情報
+                .grid__item-letter(data-blotter="")
+                    span.content__text-inner NEWS
+                i.fas.fa-tint
+            .flex-box
+                .flex-box
+                    .flex-2
+                        .main-box.news-box
+                            a(href="news-inner9.html")
+                                img(src="images/news/news-9-cover.jpg" alt="TOYO【超澎派回饋】年末感謝季")
+                            p.time 2020-12-15
+                            a(href="news-inner9.html")
+                                .title TOYO【超澎派回饋】年末感謝季
+                            p.description 2020 倒數～感恩大回饋，指定機種送好禮 2 選 1。快點入文章了解!
+                    .flex-2
+                        .main-box.news-box
+                            a(href="news-inner8.html")
+                                img(src="images/news/news-8-cover.jpg" alt="TOYO【 零卡分期 】購機輕鬆分期0負擔")
+                            p.time 2020-11-01
+                            a(href="news-inner8.html")
+                                .title TOYO【 零卡分期 】購機輕鬆分期0負擔
+                            p.description 免卡、手機申辦、審核快速、輕鬆月付，最高可分 24 期，快點入文章了解!
+                    .flex-2
+                        .main-box.news-box
+                            a(href="news-inner7.html")
+                                img(src="images/news/news-0805-cover.jpg" alt="")
+                            p.time 2020-08-05
+                            a(href="news-inner7.html")
+                                .title TOYO 歡慶爸爸節！
+                            p.description
+                                | 【天天要喝水， 不如就讓爸爸喝最健康的水！
+                                br
+                                | 慶祝88節，爸氣十足！買就送萬元家電
+                    .flex-2
+                        .main-box.news-box
+                            a(href="news-inner5.html")
+                                img(src="images/news/summer festival_TOYONEWS (2).jpg" alt="")
+                            p.time 2020-07-07
+                            a(href="news-inner5.html")
+                                .title
+                                    | TOYO二十五周年感謝季 ！
+                            p.description
+                                | 二十五周年 最強夏日慶典！全面優惠８５折！更多來店贈品，快點入文章～～～
+                    .flex-2
+                        .main-box.news-box
+                            a(href="news-inner6.html")
+                                img(src="images/news/summer festival02_TOYONEWS.jpg" alt="")
+                            p.time 2020-07-07
+                            a(href="news-inner6.html")
+                                .title
+                                    | TOYO 三倍振興 加碼再升級
+                            p.description
+                                | 【振興三倍券】7/1開始預購囉～TOYO三倍振興！加碼再升級！
+                    .flex-2
+                        .main-box.news-box
+                            a(href="news-inner4.html")
+                                img(src="images/news/news-3.jpg" alt="")
+                            p.time 2020-02-01
+                            a(href="news-inner4.html")
+                                .title
+                                    | 居家防疫! 次氯酸水抗菌液!
+                            p.description
+                                | 平時保健喝的【鹼性離子水生成器】還可以同時防疫!!!
+                                br
+                                |                                 讓你在家就能大量生成 
+                                a(href="https://www.facebook.com/hashtag/%E6%AC%A1%E6%B0%AF%E9%85%B8%E6%B0%B4?source=feed_text&amp%3Bepa=HASHTAG&amp%3B__xts__[0]=68.ARCTnrUvzzmsRVvWjz56lHqv9DkJyTNGgTsqpuelxW8v0Y2WfF8QAGAtp8Hipca9k36lZBIJDoD7NIvWVVt9qOrM04WDq8Pq2Gy4hHRT7xWmSj2_N506y8Fo9pPRLbRY7XoJAyPxSnRanNqfjA7BJGV8yrDBaYGHwhPQjIomoFDYSpdkC5WGh5KfMeuQOiDtlU5s17JcqIfIi1zczO8j7twQFCojpl1yMGYEDOF66Og_QSFoUcWYK89xbdFK_NdfYAH10xA3hi0X4rODPmvTsxsyPnyJOwj8oQX1sbOTR0yRPsbu_wfFF0NqEZ3wZFfxx3Fw_YYhkoZV19oNond7c7e2mQ&amp%3B__tn__=*NK-R" target="_blank") #次氯酸水
+                                a(href="https://www.facebook.com/hashtag/%E4%B8%80%E6%A9%9F%E5%A4%9A%E7%94%A8?source=feed_text&amp%3Bepa=HASHTAG&amp%3B__xts__[0]=68.ARCTnrUvzzmsRVvWjz56lHqv9DkJyTNGgTsqpuelxW8v0Y2WfF8QAGAtp8Hipca9k36lZBIJDoD7NIvWVVt9qOrM04WDq8Pq2Gy4hHRT7xWmSj2_N506y8Fo9pPRLbRY7XoJAyPxSnRanNqfjA7BJGV8yrDBaYGHwhPQjIomoFDYSpdkC5WGh5KfMeuQOiDtlU5s17JcqIfIi1zczO8j7twQFCojpl1yMGYEDOF66Og_QSFoUcWYK89xbdFK_NdfYAH10xA3hi0X4rODPmvTsxsyPnyJOwj8oQX1sbOTR0yRPsbu_wfFF0NqEZ3wZFfxx3Fw_YYhkoZV19oNond7c7e2mQ&amp%3B__tn__=*NK-R" target="_blanl") #一機多用
+                    .flex-2
+                        .main-box.news-box(div="")
+                            a(href="news-inner3.html")
+                            img(src="images/news/news-5.jpg" alt="")
+                            p.time 2020-02-01
+                            a(href="news-inner3.html")
+                                .title
+                                    | 防疫、抗菌 不用搶酒精啦!
+                            p.description
+                                | 比酒精、漂白水更安全! 除菌率99.99%的抗菌液!
+                                br
+                                |                                 TOYO #生成次氯酸水四大機種你知道嗎!
+                                a(href="https://www.facebook.com/hashtag/%E6%AC%A1%E6%B0%AF%E9%85%B8%E6%B0%B4%E6%8A%97%E8%8F%8C%E6%B6%B2?source=feed_text&epa=HASHTAG&__tn__=*NK-R" target="_blank") #次氯酸水抗菌液
+                                a(href="https://www.facebook.com/hashtag/%E4%B8%80%E6%A9%9F%E5%A4%9A%E7%94%A8?source=feed_text&amp%3Bepa=HASHTAG&amp%3B__xts__[0]=68.ARCTnrUvzzmsRVvWjz56lHqv9DkJyTNGgTsqpuelxW8v0Y2WfF8QAGAtp8Hipca9k36lZBIJDoD7NIvWVVt9qOrM04WDq8Pq2Gy4hHRT7xWmSj2_N506y8Fo9pPRLbRY7XoJAyPxSnRanNqfjA7BJGV8yrDBaYGHwhPQjIomoFDYSpdkC5WGh5KfMeuQOiDtlU5s17JcqIfIi1zczO8j7twQFCojpl1yMGYEDOF66Og_QSFoUcWYK89xbdFK_NdfYAH10xA3hi0X4rODPmvTsxsyPnyJOwj8oQX1sbOTR0yRPsbu_wfFF0NqEZ3wZFfxx3Fw_YYhkoZV19oNond7c7e2mQ&amp%3B__tn__=*NK-R" target="_blanl") #一機多用
+                    .flex-2
+                        a(href="news-inner.html")
+                            .main-box.news-box
+                                img(src="http://www.toyo-autech.com.tw/upload/images/%E6%8A%95%E5%BD%B1%E7%89%871(2).jpeg" alt="")
+                                p.time 2018-11-15
+                                .title
+                                    | 全新機種 - TOYO還元水素水生成器 - 上市囉！！
+                                p.description 【好水世家新登場的神秘人物是誰!!!?】全新機種 - TOYO還元水素水生成器 - 正式開賣啦～ 一機滿足全家人的需求！
+                    .flex-2
+                        a(href="news-inner2.html")
+                            .main-box.news-box
+                                img(src="./images/news-2.png" alt="")
+                                p.time 2018-10-17
+                                .title
+                                    | TOYO LINE@官方客服上線囉～
+                                p.description TOYO line@官方帳號開通囉～歡迎大家多多利用
+

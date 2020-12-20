@@ -1,0 +1,183 @@
+extends includes/base.pug
+block variables
+    - var productName = 'TYH-71GS'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/TYH-71GS/cover.png" alt="")
+                ul.img-list.flex-box
+                    li
+                        img(src="images/product/TYH-71GS/cover.png" alt="")
+                    li
+                        img(src="http://www.toyo-autech.com.tw/cache/cutw_320h_320/jpg/1428640115.jpg" alt="")
+                .name 日本原裝進口鹼性離子水生成器 TYH-71GS
+                p 上型還元水素水生成器現代家庭最佳保健飲用水
+                .detail
+                    ul
+                        li 日本原裝超強電解 
+                        li 可切換5段酸鹼值，適合全家人的飲水習慣
+                        li 濾心智慧提醒更換，安全又貼心
+                        li 日本厚生勞動省認證番號221AGBZX00254000
+                    div
+                        - var n = 1;
+                        while n < 18
+                            div
+                                img(src=`images/product/TYH-71GS/${n++}.jpg` alt="產品介紹")
+                    .ct
+                        .price
+                            | 建議售價：36800元
+                        a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/TYH-71GS/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/TYH-71GS/")
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品描述
+                p 
+                    | 【日本原裝進口】
+                    br
+                    | 電解槽大、品質穩定，可連續電解出水30分鐘。
+                    br
+                    | 日本厚生労働省認證番號221AGBZX00254000號。
+                p
+                    | 【可生成多段PH酸鹼值鹼性離子(水素)水】
+                    br
+                    | 鹼性水ph8.0~9.5日常保健飲用。
+                    br
+                    | 酸性水ph6.0洗顏美容收斂。
+                    br
+                    | 中性水服藥ph7.0、幼兒泡牛奶。
+                    br
+                    | 鹼性水pH10.0 (無刺激性)清洗蔬果去農藥殘留
+                p
+                    | 【飲用鹼性離子水(水素)水5大好處】
+                    br
+                    | 富含負電位水素(氫)分子排除體內自由基。
+                    br
+                    | 鹼性水質幫助調整體質。
+                    br
+                    | 小分子團水易吸收。
+                    br
+                    | 礦物質離子化好吸收。
+                    br
+                    | 潔淨不含氯氣/細菌/雜質/重金屬。
+                p
+                    | 【保養及維護】
+                    br
+                    | 建議使用3年以上，需回原廠進行保養維護，將清洗電解槽、更換管線零配件。未使用靜置2周以上，使用前請先手動逆洗30秒-60秒，並排放水10-15分鐘，若仍有狀況需回原廠進行保養維護，靜置一個月以上可另行預約客服0800-090-881到府酸洗及管線檢查。
+            .main-box
+                h5 商品內容
+                p 鹼性離子水生成器主機、日本原裝本體濾心1顆、中文商品說明書、日文商品說明書、液晶顯示中日文對照表、電解用添加食品級鈣粉、酸性水龍頭(LF無鉛國家認證) 、pH檢測液、酸鹼性水分歧栓、一年保證書。
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 型號
+                        td TOYO TYH-71GS
+                    tr
+                        td 電源
+                        td AC110V 50/60HZ
+                    tr
+                        td 尺寸
+                        td 宽250 × 深135 × 高294（mm）
+                    tr
+                        td 重量
+                        td 约6.2kg
+                    tr
+                        td 電解能力切換
+                        td 還元水/3階段（約pH8.5/pH9.0/pH9.5）/凈水 （約pH7.0）/酸性水 （約pH7.0）
+                    tr
+                        td 連續使用電解時間
+                        td 常溫時連續通水30分鐘
+                    tr
+                        td 電解生成量
+                        td 3L/min（水壓0.1Mpa時）
+                    tr
+                        td 電解槽洗淨方式 
+                        td 自動洗淨（洗淨時由微電腦控制）
+                    tr
+                        td 電解材質
+                        td 鈦鍍白金電極板
+                    tr
+                        td 適合水壓
+                        td 0.05MPa~0.45MPa 合格之水道水
+                    tr
+                        td 適合水源
+                        td 自來水
+                    tr
+                        td 使用溫度
+                        td 5℃~40℃
+                    tr
+                        td 濾芯濾材
+                        td 粒狀抗菌活性炭+亞硫酸鈣 
+                    tr
+                        td 濾芯遊離殘留氯
+                        td 總過濾水量12000L以上除去率80% JIS s3201 試驗 
+                    tr
+                        td 濾芯無法除去成份 
+                        td 溶於原水中的及金屬
+                    tr
+                        td 濾芯壽命
+                        td 約1年，或通水12000L后（依水質差異有所不同）
+                    tr
+                        td 電源保護裝置
+                        td 保險絲125V 5A
+                    tr
+                        td 溫度保護裝置
+                        td 熱水保護、過熱保護
+                    tr
+                        td 注意事項
+                        td
+                            | 1.請使用符合自來水飲用標準的水源。
+                            br
+                            | 2.PH10以上請勿飲用。
+                            br
+                            | 3.凡管路須請水電施工時，費用不含於機器售價內。
+                            br
+                            | 4.水壓不足的場所需另購加壓馬達組之費用。
+                            br
+                            | 5.凡水龍頭不適合者(例：伸縮水龍頭等)得另加工資、材料費。
+                            br
+                            | 6.PH值會因各地水質及水壓而有所改變。
+                .align-center
+                    a(href="qa.html")
+                        .action-btn
+                            i.far.fa-question-circle  常見問題
+                    a(target="_blank" href="https://drive.google.com/open?id=10c1mdzru7WHm0o8DH1s6qf-7L73dgdzB")
+                        .action-btn
+                            i.fal.fa-wrench  操作手冊
+            .main-box
+                h5 安裝實例
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/%E8%A8%B1%E5%AE%B6%E6%A6%AE-%E9%99%B3%E5%A8%81%E5%B2%B3%20(1).JPG" alt="")
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/%E9%99%B3%E7%A7%80%E6%A1%82%20(2).jpg" alt="")
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/%E8%A8%B1%E6%A2%85%E6%B7%91%20(2)%20%E6%8B%B7%E8%B2%9D.jpg" alt="")
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/%E5%A7%9A%E6%99%8F%E7%8F%A0%20(2).jpg" alt="")
+            .main-box
+                h5 週邊配件
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        img(src="images/product/accessories/TA-800T.jpg" alt="TA-800T")
+                        p TA-800T
+                    .flex-2
+                        img(src="images/product/accessories/MW-7000C.jpg" alt="MW-7000C（日製）")
+                        p MW-7000C（日製）
+                    .flex-2
+                        img(src="images/product/accessories/2s.png" alt="OMAMORI - 2S")
+                        p OMAMORI - 2S
+                    .flex-2
+                        img(src="images/product/accessories/3s.png" alt="OMAMORI - 3S")
+                        p OMAMORI - 3S

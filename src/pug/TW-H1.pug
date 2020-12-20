@@ -1,0 +1,173 @@
+extends includes/base.pug
+block variables
+    - var productName = 'TW-H1'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="http://www.toyo-autech.com.tw/upload/images/%E6%8A%95%E5%BD%B1%E7%89%871(2).jpeg" alt="")
+                ul.img-list.flex-box
+                    li
+                        img(src="http://www.toyo-autech.com.tw/upload/images/%E6%8A%95%E5%BD%B1%E7%89%871(2).jpeg" alt="")
+                    li
+                        img(src="images/product/TW-H1/inner.jpg" alt="")
+                    li
+                        img(src="images/product/TW-H1/cover.png" alt="")
+                    li
+                        img(src="http://www.toyo-autech.com.tw/cache/cutw_320h_320/png/1540452320.png" alt="")
+                .name 桌上型還元水素水生成器 TW-H1
+                p 桌上型還元水素水生成器現代家庭最佳保健飲用水
+                .detail
+                    ul
+                        li 日本家庭保健 NO.1 鹼性離子水生成器
+                        li 觸控大螢幕設計 (4.3吋TFT-LCD)
+                        li 可切換 5 段酸鹼值，適合全家人的飲水習慣
+                        li 濾心智慧提醒更換，安全又貼心
+                        li 通過台灣 SGS 國家級檢驗
+                    div
+                        - var n = 1;
+                        while n < 17
+                            div
+                                img(src=`images/product/TW-H1/${n++}.jpg` alt="產品介紹")
+                    .ct
+                        .price
+                            | 建議售價：32800元
+                        a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/TW-H1/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/TW-H1/")
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品描述
+                p 
+                    | 【台灣設計】外型簡約、直覺式操作大介面。
+                    br
+                    | 【日本技術】電解槽大、品質穩定，可連續電解出水 30 分鐘。
+                p
+                    | 【飲用鹼性離子水(水素)水 5 大好處】
+                    br
+                    | 富含負電位水素(氫)分子排除體內自由基。
+                    br
+                    | 鹼性水質幫助調整體質。
+                    br
+                    | 小分子團水易吸收。
+                    br
+                    | 礦物質離子化好吸收。
+                    br
+                    | 潔淨不含氯氣/細菌/雜質/重金屬。
+                p
+                    | 【可生成多段pH酸鹼值電解水素水】
+                    br
+                    | 鹼性水 pH8.0 ~ 9.5 日常保健飲用。
+                    br
+                    | 酸性水 pH6.0 ~ 6.5 洗顏美容收斂。
+                    br
+                    | 中性水服藥 pH7.0、幼兒泡牛奶。
+                    br
+                    | 鹼性水 pH10.0 (無刺激性) 清洗蔬果去農藥殘留
+                p
+                    | 【保養及維護】
+                    br
+                    | 建議使用 3 年以上，需回原廠進行保養維護，將清洗電解槽、更換管線零配件。未使用靜置 2 周以上，使用前請先手動逆洗 30 秒 - 60 秒，並排放水 10 - 15 分鐘，若仍有狀況需回原廠進行保養維護，靜置一個月以上可另行預約客服 0800-090-881 到府酸洗及管線檢查。
+            .main-box
+                h5 商品內容
+                p 鹼性離子水生成器主機、本體濾心1顆、無鉛酸性龍頭、壁面固定零件組、進出水軟管、商品說明書、酸性水龍頭 (LF 無鉛國家認證)、pH檢測液、一年保證書。
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 型號
+                        td 桌上型還元水素水生成器 TW-H1
+                    tr
+                        td 電源
+                        td AC 110~120
+                    tr
+                        td 消耗電力
+                        td 150W
+                    tr
+                        td 尺寸
+                        td W 24CM D 14CM H 29CM
+                    tr
+                        td 重量
+                        td 未入水時約4,5KG
+                    tr
+                        td 電解方式
+                        td 水道水過濾供給連續生成
+                    tr
+                        td 電解能力切換
+                        td 還元水素水12段/中性1段/酸性6段
+                    tr
+                        td 連續使用電解時間
+                        td 常溫時連續通水30分鐘
+                    tr
+                        td 電解生成量
+                        td 3～5Ｌ/分(視原水水壓而定)
+                    tr
+                        td 電極洗淨
+                        td 30秒～1分鐘(自動洗淨)
+                    tr
+                        td 適合水壓
+                        td 0.5KG~3.5KG
+                    tr
+                        td 適合水源
+                        td 自來水
+                    tr
+                        td 使用最高溫度
+                        td 40°C
+                    tr
+                        td 工作溫度
+                        td 整機電解30分鐘內部溫度約50°C左右(主機板散熱處溫度約70°C左右)
+                    tr
+                        td 面板規格
+                        td 4.3寸TFT-LCD
+                    tr
+                        td 面板壽命
+                        td 正常使用下20,000小時
+                    tr
+                        td 面板適用常溫
+                        td 環境溫度建議40度以下
+                    tr
+                        td 面板適用電壓
+                        td DC12V
+                    tr
+                        td 面板耗電量
+                        td 0.64W
+                    tr
+                        td 保護裝置
+                        td 二段保險絲過熱過載
+                .align-center
+                    a(href="qa.html")
+                        .action-btn
+                            i.far.fa-question-circle  常見問題
+                    a(target="_blank" href="https://drive.google.com/open?id=1fk3lyUhi5nhDX6Xz1XlN6QqqNrKPKQ2O")
+                        .action-btn
+                            i.fal.fa-wrench  操作手冊
+            .main-box
+                h5 安裝實例
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/IMG_3331%E6%8B%B7%E8%B2%9D.jpg" alt="")
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/IMG_3334%E6%8B%B7%E8%B2%9D.jpg" alt="")
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/IMG_3338%E6%8B%B7%E8%B2%9D.jpg" alt="")
+            .main-box
+                h5 週邊配件
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/IMG_4551.jpg" alt="")
+                        p TW-H1 主體濾心
+                    .flex-2
+                        img(src="images/product/accessories/2s.png" alt="OMAMORI - 2S")
+                        p OMAMORI - 2S
+                    .flex-2
+                        img(src="images/product/accessories/3s.png" alt="OMAMORI - 3S")
+                        p OMAMORI - 3S

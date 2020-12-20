@@ -1,0 +1,76 @@
+.menu
+	ul.menu-nav
+		a(href="about.html")
+			li
+				| 企業情報
+				p.eng
+					| ABOUT TOYO
+		a(href="product.html")
+			li
+				| 商品情報
+				p.eng
+					| PRODUCTS
+		a(href="qa.html")
+			li
+				| 常見問題
+				p.eng
+					| Q&A
+		a(href="shops.html")
+			li
+				| 店舖一覽
+				p.eng
+					| SHOPS
+		a(href="news.html")
+			li
+				| 最新情報
+				p.eng
+					| NEWS
+	.social
+		ul
+			a(href="https://www.facebook.com/toyoautech/" target="_blank")
+				li
+					i.fab.fa-facebook-f
+			a(href="https://www.instagram.com/toyo_water/" target="_blank")
+				li
+					i.fab.fa-instagram
+			a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h" target="_blank")
+				li
+					i.fab.fa-line
+			a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/?l-id=tw_product_shop');" href="https://www.rakuten.com.tw/shop/toyo-autech/?l-id=tw_product_shop" target="_blank")
+				li
+					i.fal.fa-shopping-bag
+.header
+	div
+		a(href="index.html")
+			.logo
+				img(src="./images/SVG/logo-s.svg" alt="")
+		.nav
+			ul
+				a(href="about.html")
+					li
+						| 企業情報
+						p.eng
+							| ABOUT TOYO
+				a(href="product.html")
+					li
+						| 商品情報
+						p.eng
+							| PRODUCTS
+				a(href="qa.html")
+					li
+						| 常見問題
+						p.eng
+							| Q&A
+				a(href="shops.html")
+					li
+						| 店舖一覽
+						p.eng
+							| SHOPS
+		.fixed-top-btn
+			a(onclick=`return gtag_report_conversion("${rakutenUrl}");` href=`${rakutenUrl}` target="_blank")
+				.action-btn
+					i.fal.fa-shopping-bag  線上購買
+			.hamburger
+				span.line
+				span.line
+				span.line

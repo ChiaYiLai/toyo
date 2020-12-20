@@ -1,0 +1,8 @@
+block variables
+doctype html
+html
+	include head.pug
+	body(id=`${bodyId}`)
+		include header.pug
+		block content
+		include footer.pug
