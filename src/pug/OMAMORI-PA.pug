@@ -1,0 +1,67 @@
+extends includes/base.pug
+block variables
+    - var productName = 'OMAMORI-PA'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/filter/OMAMORI-PA.png" alt="淨水御守-雜質御守濾心 OMAMORI-PA")
+                .name 淨水御守-雜質御守濾心<br>OMAMORI-PA
+                .detail
+                    ul
+                        li 適用於TOYO全系列鹼性離子水生成器前置濾心、生飲淨水組。
+                        li 可濾除雜質、有害微生物、浮物、泥沙、污垢、鐵銹、抑制細菌。
+                        li 可延長後續淨水濾心、機器及壽命、增加效能。
+                        li 濾心需定期更換，避免影響飲水品質及安全。
+                        li 濾心購買與更換細節，歡迎與我們聯繫。
+                    .ct
+                        .price 建議售價：700元
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們
+            .main-box
+                h5 商品內容
+                ul.list-product-content
+                    li 
+                        | 替換用濾心OMAMORI-PA
+                        span 1個
+
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 濾材
+                        td 1 μ抗菌PP棉
+                    tr
+                        td 過濾效能
+                        td
+                            ul
+                                li 可濾除雜質、有害微生物、浮物 、泥沙、污垢、鐵銹、抑制細菌。
+                                li 可延長後續淨水濾心、機器及壽命、增加效能。
+                    tr
+                        td 過濾能力
+                        td 約6個月  ※依照各地水質、使用方式，壽命也會改變
+                    tr
+                        td 尺寸
+                        td 約80(寬) 320(高) mm
+                    tr
+                        td 重量
+                        td 約500g
+                    tr
+                        td 使用水溫
+                        td 4~40℃以下
+                    tr
+                        td 適用水壓
+                        td 14-42psi( 1-3 kg/cm²)
+                    tr
+                        td 產地
+                        td 台灣
+                    tr
+                        td 保存期限
+                        td 未開封5年

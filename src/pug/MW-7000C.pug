@@ -1,0 +1,78 @@
+extends includes/base.pug
+block variables
+    - var productName = 'MW-7000C'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/filter/MW-7000C.png" alt="TYH/IE系列-日本原裝主體濾心 MW-7000C")
+                .name TYH/IE系列-日本原裝主體濾心<br>MW-7000C
+                .detail
+                    ul
+                        li 適用於日本原裝鹼性離子水生成器 TYH與IE系列機種。
+                        li 可有效抑制細菌生長、殘留氯、臭氣。
+                        li 請使用原廠濾心並定期更換，避免影響機器使用壽命、飲水品質及安全。
+                        li 濾心購買與更換細節，歡迎與我們聯繫。
+                    .ct
+                        .price 建議售價：2800元
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們
+            .main-box
+                h5 商品內容
+                ul.list-product-content
+                    li 
+                        | 替換用濾心MW-7000C
+                        span 1個
+                    li
+                        | 墊片(大)
+                        span 1枚
+                    li
+                        | 墊片(小)
+                        span 1枚
+                    li
+                        | 日本版原廠認證及更換時間貼紙
+                        span 1張
+                    li
+                        | 中文版原廠認證及更換時間貼紙
+                        span 1張
+
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 濾材
+                        td 日本UNITIKA銀添粒狀活性碳(日本厚生省認證)<br>日本富田製藥亞硫酸鈣(NSF認證)<br>不織布濾材
+                    tr
+                        td 過濾效能
+                        td 可有效抑制細菌生長、殘留氯、臭氣
+                    tr
+                        td 過濾能力
+                        td 12.000L(在原水氯1ppm)<br>約12個月更換<br>※依照各地水質、使用方式，壽命也會改變
+                    tr
+                        td 濾殼材質
+                        td ABS樹脂
+                    tr
+                        td 尺寸
+                        td 約88(直徑) 150(高) mm
+                    tr
+                        td 重量
+                        td 約400g
+                    tr
+                        td 使用水溫
+                        td 40℃以下
+                    tr
+                        td 使用可能最小水壓
+                        td 0.5kgf/cm2
+                    tr
+                        td 產地
+                        td 日本原裝
+                    tr
+                        td 安裝注意
+                        td 台灣地區因水質與日本有所差異，需搭配前置生飲濾心組
