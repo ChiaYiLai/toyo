@@ -1,0 +1,31 @@
+extends includes/base.pug
+block variables
+    - var productName = 'TA-903-2'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/filter/TA-903-2.png" alt="TA-903 銀添活性碳濾心")
+                .name TA-903 銀添活性碳濾心
+                .detail
+                    ul
+                        li 銀添活性碳對有機物有極強的吸附力,可吸附大量溶於水中的含有機成分之懸浮微粒。
+                        li 銀離子能吸引細菌體內酶白上的硫氫基,迅速地結合在一起,並使含硫氫基之酵素失去活性死亡。
+                        li 濾心壽命：10~12個月，視水質而定
+                    .ct
+                        .price 建議售價：1200元
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們
+            .main-box
+                h5 商品內容
+                ul.list-product-content
+                    li
+                        | 替換用TA-903銀添活性碳濾心
+                        span 1個

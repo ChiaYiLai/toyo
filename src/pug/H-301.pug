@@ -1,0 +1,135 @@
+extends includes/base.pug
+block variables
+    - var productName = 'H-301'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="http://www.toyo-autech.com.tw/cache/cutw_320h_320/png/1540450534.png" alt="")
+                ul.img-list.flex-box
+                    li
+                        img(src="http://www.toyo-autech.com.tw/cache/cutw_320h_320/png/1540450534.png" alt="")
+                .name 櫥下型雙溫熱飲機  H-301
+                .detail
+                    ul
+                        li 水龍頭—開熱水即來
+                        li 創新概念、節能、環保、便利
+                        li 居家雙溫飲用水最佳選擇
+                    div
+                        - var n = 1;
+                        while n <= 2
+                            div
+                                img(src=`images/product/H-301/intro-${n++}.jpg` alt="產品介紹")
+                    .ct
+                        .price
+                            | 建議售價：21800元
+                        a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/H-301/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/H-301/")
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品描述
+                p 
+                    | 安全- SUS304不鏽鋼龍頭，龍頭配備安全鎖開關，使用熱水更安全。
+                    br
+                    | 省電- 待機狀態，用電量比一顆40瓦特的燈泡還要低。
+                    br
+                    | 便利- 溫度可從60°C到98°C，熱水每小時可供應60杯。
+                    br
+                    | 節能- 環保節能循環槽，節能省水。
+                p
+                    | 2.4L大容量，隨時提供全家人乾淨好水。
+                    br
+                    br
+                    |【標準配件】
+                    br
+                    | 淨水御守 – 安心生飲前置淨水組OMAMORI – 2S
+                    br
+                    | 通過台灣SGS國家生飲認證、濾材符合美國NSF42標準、美國FDA檢測項目、日本食品分析中心JFRL認證。添加日本銀離子，長效抑菌更安心。
+                p
+                    | 濾料日本原裝 三大核心技術 :
+                    br
+                    | - 日本GE-Techno陶瓷濾料
+                    br
+                    | - 日本GE-Techno銀離子活性碳纖維
+                    br
+                    | - 日本エルベス不織布
+                    br
+                    |可以除菌抑菌、濾除三氯甲烷、揮發性有機物、有害化學物質、水中重金屬鉛、銅、汞、石綿、農藥、泥沙雜質、塑膠微粒等，過濾孔徑為1Microns。
+                p
+                    | 【注意事項】
+                    br
+                    | 1.適用一般自來水(請勿使用山泉水、地下水) 
+                    br 
+                    | 2.水壓不足的場合建議另加購加壓馬達
+                    br
+                    | 3.管路如需水電施工，費用另計
+                p
+                    | 【保養及維護】
+                    br
+                    | 建議使用3年以上，需回原廠進行保養維護，將清洗熱缸、更換管線零配件。未使用靜置多日，使用前請先排放水3-5分鐘，亦可通知原廠進行保養維護，預約客服中心0800-090-881到府服務。
+
+            .main-box
+                h5 商品內容
+                p 櫥下熱飲機主機、不鏽鋼雙溫龍頭、商品說明書、一年保證書、安心生飲前置淨水組 OMAMORI - 2S。
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 電源
+                        td AC110V
+                    tr
+                        td 外觀尺寸
+                        td 20(寬)X22(深)X31(高)公分
+                    tr
+                        td 熱膽容量
+                        td 約2.4公升
+                    tr
+                        td 外觀材質
+                        td 鍍鋅鋼板烤漆
+                    tr
+                        td 消耗功率
+                        td 780/1300W
+                    tr
+                        td 水龍頭底座鑽孔孔徑
+                        td 35mm
+                    tr
+                        td 適用水源
+                        td 自來水
+                    tr
+                        td 使用最高溫度
+                        td 98度C
+                    tr
+                        td 內膽材質
+                        td ST304不銹鋼
+
+                .align-center
+                    a(href="qa.html")
+                        .action-btn
+                            i.far.fa-question-circle  常見問題
+                    a(href="https://drive.google.com/open?id=1uOIO3ntQX7O9-FI_SyBlyP08WPPHd14C")
+                        .action-btn
+                            i.fal.fa-wrench  操作手冊
+            .main-box
+                h5 安裝實例
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        img(src="images/product/H-301/set-1.jpg" alt="")
+                    .flex-2
+                        img(src="images/product/H-301/set-2.jpg" alt="")
+                    .flex-2
+            .main-box
+                h5 週邊配件
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        img(src="images/product/accessories/2s.png" alt="OMAMORI - 2S")
+                        p OMAMORI - 2S

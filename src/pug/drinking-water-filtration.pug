@@ -1,0 +1,79 @@
+extends includes/base.pug
+block variables
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/?l-id=tw_product_shop`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .wave-container
+            svg.waves(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto")
+                defs
+                    path#gentle-wave(d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z")
+                g.parallax
+                    use(xlink:href="#gentle-wave" x="48" y="3" fill="#4171aa")
+                    use(xlink:href="#gentle-wave" x="48" y="5" fill="#78cbc5")
+                    use(xlink:href="#gentle-wave" x="48" y="7" fill="#cccccc")
+
+        .main-container
+            .main-title
+                .title 商品情報
+                div(class="grid__item-letter" data-blotter="")
+                    span(class="content__text-inner") PRODUCT
+                i.fas.fa-tint
+            ul.list-product
+                li
+                    a(href="product.html") 全部商品
+                li 
+                    a(href="preventive-products.html") 防疫專區
+                li      
+                    a(href="alkaline-ionizer.html") 鹼性離子水生成器
+                li      
+                    a(href="drinking-water-filtration.html") 生飲淨水器
+                li   
+                    a(href="water-filtration.html") 居家凈水
+                li
+                    a(href="filters&merchandise.html") 濾心耗材
+                li  
+                    a(href="home-collections.html") 家居選物
+            .main-box.product-box
+                #product4
+                    ul
+                        li 濾心耗材
+                    .flex-box
+                        .each-product.flex-3
+                            a(href="3SF.html")
+                                img(src="images/product/3SF/3SF.png" alt="淨水御守 - 全效能生飲淨水器 OMAMORI - 3SF")
+                            .title
+                                a(href="3SF.html") 淨水御守 - 全效能生飲淨水器 OMAMORI - 3SF
+                        .each-product.flex-3
+                            a(href="3S.html")
+                                img(src="images/product/3S/3S.png" alt="淨水御守 – 全效能生飲前置淨水組 OMAMORI - 3S")
+                            .title
+                                a(href="3S.html") 淨水御守 – 全效能生飲前置淨水組 OMAMORI - 3S
+                        .each-product.flex-3
+                            a(href="2SF.html")
+                                img(src="images/product/2sf/cover.png" alt="淨水御守 - 安心生飲淨水器 OMAMORI - 2SF")
+                            .title
+                                a(href="2SF.html") 淨水御守 - 安心生飲淨水器 OMAMORI - 2SF
+                        .each-product.flex-3
+                            a(href="2S.html")
+                                img(src="images/product/2s/cover.png" alt="淨水御守 – 安心生飲前置淨水組 OMAMORI - 2S")
+                            .title
+                                a(href="2S.html") 淨水御守 – 安心生飲前置淨水組 OMAMORI - 2S
+                        .each-product.flex-3
+                            a(href="TA-701B.html")
+                                img(src="images/product/TA-701B/cover.png" alt="複合式生飲淨水器 TA-701B")
+                            .title
+                                a(href="TA-701B.html") 複合式生飲淨水器 TA-701B
+                        .each-product.flex-3
+                            a(href="H-301.html")
+                                img(src="http://www.toyo-autech.com.tw/cache/cutw_320h_320/png/1540450534.png" alt="櫥下型雙溫熱飲機 H-301")
+                            .title
+                                a(href="H-301.html") 櫥下型雙溫熱飲機 H-301
+                        .each-product.flex-3
+                            a(href="T-8.html")
+                                img(src="http://www.toyo-autech.com.tw/cache/cutw_320h_320/png/1540450003.png" alt="三溫飲水機 T-8")
+                            .title
+                                a(href="T-8.html") 三溫飲水機 T-8
+

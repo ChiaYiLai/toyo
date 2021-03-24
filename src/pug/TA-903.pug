@@ -1,0 +1,31 @@
+extends includes/base.pug
+block variables
+    - var productName = 'TA-903'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/filter/TA-903.png" alt="TA-903 PP棉濾心")
+                .name TA-903 PP棉濾心
+                .detail
+                    ul
+                        li NSF認證合格之1微米(1μ)孔徑濾心,特殊結構由內而外漏斗式結構外鬆内密。
+                        li 濾雜效能：可去除水中較粗雜質固體物:如鐵屑、砂石、毛髮、沉澱物..等。
+                        li 濾心壽命：3~6個月，視各地區水質而定
+                    .ct
+                        .price 建議售價：350元
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們
+            .main-box
+                h5 商品內容
+                ul.list-product-content
+                    li
+                        | 替換用TA-903 PP棉濾心
+                        span 1個

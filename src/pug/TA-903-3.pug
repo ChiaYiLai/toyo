@@ -1,0 +1,31 @@
+extends includes/base.pug
+block variables
+    - var productName = 'TA-903-3'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/filter/TA-903-3.png" alt="TA-903 樹脂濾心")
+                .name TA-903 樹脂濾心
+                .detail
+                    ul
+                        li 採用法國羅門哈斯食品級樹脂，降低原水中的石灰質硬度增進口感。
+                        li 利用鈉型離子置換電荷吸附排斥原理,以鈉離子置換鈣、鎂、鐵、錳等金屬離子,將硬性物質交換『吸附』,達成軟水目的及增加口感(鈉與鎂交換後)。
+                        li 濾心壽命：3~6個月，視水質而定
+                    .ct
+                        .price 建議售價：800元
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們
+            .main-box
+                h5 商品內容
+                ul.list-product-content
+                    li
+                        | 替換用TA-903樹脂濾心濾心
+                        span 1個
