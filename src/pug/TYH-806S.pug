@@ -1,0 +1,189 @@
+extends includes/base.pug
+block variables
+    - var productName = 'TYH-806S'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/TYH-806S/806S.png" alt="TYH-806S")
+                ul.img-list.flex-box
+                    li
+                        img(src="images/product/TYH-806S/806S.png" alt="TYH-806S")
+                .name 櫥下型 鹼性離子水生成器＋熱飲器TYH-806S
+                .detail
+                    ul
+                        li All in One 控制龍頭 ，廚下空間省最大。
+                        li pH9.0鹼性離子水，保健養身。
+                        li 5種酸鹼水質選擇，符合全家人需求。
+                        li 冷熱好水一開就來。
+                        li 獨立熱水淨水系統。
+                        li 經國家能源分級檢驗為2級省電
+                    div
+                        - var n = 1;
+                        while n < 6
+                            div
+                                img(src=`images/product/TYH-806S/${n++}.jpg` alt="產品介紹")
+                    .ct
+                        .price
+                            | 建議售價：58800元
+                        a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/TYH-806S/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/TYH-806S/")
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品描述
+                ul.list-disc
+                    li All-IN-ONE 智能操控龍頭
+                    li 櫥下主機省空間
+                    li 保健鹼性離子水
+                    li 5種酸鹼水質調整
+                    li 冷熱好水一開就來
+                    li 全自動濾心更換提醒功能
+                    li 全自動逆洗系統
+                    li 通過SGS, CE檢驗
+                    li 經國家能源分級檢驗為2級省電
+                br
+                h6.title-xs 【獨立熱水淨水系統】
+                ul
+                    li 安全- SUS304不鏽鋼龍頭，龍頭配備安全鎖開關，使用熱水更安全。
+                    li 節能- 經國家能源分級檢驗為2級省電
+                    li 便利- 一開熱水即來，溫度可調整60°C到98°C
+                    li 環保- 環保節能循環槽，節能省水。
+                br
+                br
+                h6.title-xs 【標準配件】
+                p
+                    | 淨水御守 – 安心生飲前置淨水組OMAMORI – 2S
+                    br
+                    | 通過台灣SGS國家生飲認證、濾材符合美國NSF42標準、美國FDA檢測項目、日本食品分析中心JFRL認證。添加日本銀離子，長效抑菌更安心。
+                    br
+                    | 濾料日本原裝 三大核心技術 :
+                ul
+                    li - 日本GE-Techno陶瓷濾料
+                    li - 日本GE-Techno銀離子活性碳纖維
+                    li - 日本エルベス不織布
+                p 可以除菌抑菌、濾除三氯甲烷、揮發性有機物、有害化學物質、水中重金屬鉛、銅、汞、石綿、農藥、泥沙雜質、塑膠微粒等，過濾孔徑為1Microns。
+                br
+                h6.title-xs 【注意事項】
+                ol.list-deci
+                    li 適用一般自來水(請勿使用山泉水、地下水)
+                    li 水壓不足的場合建議另加購加壓馬達
+                    li 管路如需水電施工，費用另計
+                br
+                h6.title-xs 【保養及維護】
+                p 建議使用3年以上，需回原廠進行保養維護，將清洗電解槽、清洗熱缸、更換管線零配件。未使用靜置多日，使用前請先排放水3-5分鐘，亦可通知原廠進行保養維護，預約客服中心0800-090-881到府服務。
+
+            .main-box
+                h5 商品內容
+                ul
+                    li TYH-806S 主機X 1
+                    li TYH-806S 龍頭X 1
+                    li OMAMORI – 2S淨水御守 -安心生飲前置淨水組
+                    li OMAMORI – PA 雜質御守濾心 X 1
+                    li OMAMORI – JC 全效能御守濾心 X 1
+            .product-info.main-box
+                h5 商品規格
+                p 電解系統
+                table
+                    tbody
+                        tr
+                            td 型號
+                            td 櫥下型鹼性離子水生成器+熱飲系統 TYH-806
+                        tr
+                            td 電源
+                            td AC 110V 50-60Hz
+                        tr
+                            td 消耗電力
+                            td 最大250W
+                        tr
+                            td 尺寸
+                            td W17cm X D37cm X H32cm
+                        tr
+                            td 重量
+                            td 約8.5KG
+                        tr
+                            td 電解方式
+                            td 自來水過濾供給連續生成
+                        tr
+                            td 電解能力切換
+                            td 鹼性離子水9段/中性淨水1段/酸性離子水1段
+                        tr
+                            td 連續使用電解時間
+                            td 常溫時連續通水30分鐘
+                        tr
+                            td 電解生成量
+                            td 3～5Ｌ/分(視原水水壓而定)
+                        tr
+                            td 電極洗淨
+                            td 自動提醒、手動洗淨（可設定洗淨量）
+                p 出水龍頭
+                table
+                    tbody
+                        tr
+                            td 尺寸
+                            td 外徑4.7cm X H21.7cm
+                        tr
+                            td 重量
+                            td 約1.6KG
+                        tr
+                            td 水龍頭安裝孔徑
+                            td 孔徑尺寸3.5CM
+                        tr
+                            td 材質
+                            td 低鉛銅鍍鉻
+                        tr
+                            td 給止水裝置
+                            td 陶瓷軸心
+                p 熱飲系統
+                table
+                    tbody
+                        tr
+                            td 適用水壓
+                            td 0.5KG～3.5KG
+                        tr
+                            td 容量
+                            td 2.4L
+                        tr
+                            td 溫度控制
+                            td 50 ℃ ～98 ℃
+                        tr
+                            td 耗電量
+                            td 0.75KWH / 24H
+                        tr
+                            td 使用電壓
+                            td AC 110V（另可指定AC 220V）
+                        tr
+                            td 加熱管功率
+                            td 最大780W（AC 220V時1300W）
+                        tr
+                            td 內膽材料
+                            td 不鏽鋼ST - 304
+                        tr
+                            td 定額電流
+                            td 6A
+
+                .align-center
+                    a(href="qa.html")
+                        .action-btn
+                            i.far.fa-question-circle  常見問題
+                    a(href="https://drive.google.com/open?id=1N8hsphW-aFaJDd_M4DuFAjLabNoZ0kSK")
+                        .action-btn
+                            i.fal.fa-wrench  操作手冊
+            .main-box
+                h5 週邊配件
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        img(src="images/product/others/PA.png" alt="OMAMORI – PA")
+                        p OMAMORI – PA
+                    .flex-2
+                        img(src="images/product/others/JC.png" alt="OMAMORI – JC")
+                        p OMAMORI – JC

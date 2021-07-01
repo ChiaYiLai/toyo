@@ -1,0 +1,110 @@
+extends includes/base.pug
+block variables
+    - var productName = '200ton'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/house/cover.png" alt="200ton")
+                ul.img-list.flex-box
+                    li
+                        img(src="images/product/house/cover.png" alt="200ton")
+                .name 不鏽鋼全戶式過濾系統
+                .detail
+                    ul
+                        li 精品級水塔過濾器，SPA等級水質。
+                        li 濾心含有日本銀離子，抑菌除氯。
+                        li 有效濾除餘氯、 泥沙鐵鏽、固態雜質、管線異味、鐵鏽、農藥、重金屬、並可吸附化學物。 
+                        li 減少產生三鹵甲烷。
+                        li 處理水量達150噸。
+                    div
+                        - var n = 1;
+                        while n < 3
+                            div
+                                img(src=`images/product/house/${n++}.jpg` alt="產品介紹")
+                    .ct
+                        .price
+                            | 建議售價：25000元
+                        a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/200ton/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/200ton/")
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品描述
+                ul.list-disc
+                    li 精品級水塔過濾器，打造家中SPA等級水質。
+                    li 濾心含有日本銀離子抑菌除氯。
+                    li 有效濾除餘氯、 泥沙鐵鏽、固態雜質、管線異味、鐵鏽、農藥、重金屬、並可吸附化學物。 
+                    li 減少產生三鹵甲烷
+                    li 降低家中用水中的過敏原、致癌物。
+                    li SUS304不鏽鋼材質，安全耐用。 （非一般電解式不鏽鋼）
+                    li 台灣生產MIT。
+                    li 符合美國F.D.A及N.S.F國家飲水標準。
+                    li 免用電、免排水，可安裝於各種不同類型建築。
+                br
+                h6.title-xs 【注意事項】
+                ol.list-deci
+                    li 適用一般自來水(使用山泉水、地下水需另行評估)
+                    li 管路如需水電施工，費用另計
+                br
+                h6.title-xs 【保養及維護】
+                p 請務必依照濾心使用壽命時間，定期更換，確保您的飲用水品質。若未使用且靜置多日，使用前請先排放水3-5分鐘，有任何問題可詢問客服中心 0800-090-881。
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tbody
+                        tr
+                            td 本體材質
+                            td SUS304不鏽鋼（非家用304不鏽鋼）
+                        tr
+                            td 濾心材質
+                            td 日本GE-Techno銀離子活性碳纖維、日本銀離子、高密度日本エルベス食品級不織布
+                        tr
+                            td 過濾孔徑
+                            td 20微米
+                        tr
+                            td 過濾效能
+                            td 約6個月※依照各地水質、使用方式，壽命也會改變
+                        tr
+                            td 外殼尺寸
+                            td 直徑26cm x 60cm(h)
+                        tr
+                            td 進水入/出口
+                            td 1“ PT-F
+                        tr
+                            td 耐壓
+                            td 7kg/cm²~10kg/cm²  (100psi~150psi)
+                        tr
+                            td 處理噸數
+                            td 150噸 ※依照各地水質、使用方式，壽命也會改變
+                        tr
+                            td 安裝方式
+                            td 立架式
+                        tr
+                            td 濾料產地
+                            td 日本製
+                        tr
+                            td 產地
+                            td 台灣
+                .align-center
+                    a(href="qa.html")
+                        .action-btn
+                            i.far.fa-question-circle  常見問題
+            .main-box
+                h5 週邊配件
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/IMG_4579.jpg" alt="日本製-150噸濾心")
+                        p 日本製-150噸濾心
+                    .flex-2
+                        img(src="http://www.toyo-autech.com.tw/upload/images/IMG_45812.jpg" alt="壓力錶")
+                        p 壓力錶

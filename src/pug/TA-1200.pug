@@ -1,0 +1,70 @@
+extends includes/base.pug
+block variables
+    - var productName = 'TA-1200'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/TA-1200/cover.png" alt="TA-1200")
+                .name TOYO主體濾心(TW-508專用) TA-1200
+                .detail
+                    ul
+                        li 適用於TW-508機種。
+                        li 可有效抑制細菌生長、殘留氯、臭氣。
+                        li 請使用原廠濾心並定期更換，避免影響機器使用壽命、飲水品質及安全。
+                        li 濾心購買與更換細節，歡迎與我們聯繫。
+                    .ct
+                        .price
+                            | 建議售價：2500元
+                        a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/TYH-806S/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/TYH-806S/")
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品內容
+                ul
+                    li 替換用濾心TA-1200 x 1個
+                    li 原廠認證及更換時間貼紙 x 1張
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tbody
+                        tr
+                            td 濾材
+                            td 日本UNITIKA銀添碳纖維、載銀纖維濾網、除鉛特殊離子交換材料
+                        tr
+                            td 過濾效能
+                            td 可有效抑制細菌生長、殘留氯、臭氣
+                        tr
+                            td 過濾能力
+                            td 10.000L (在原水氯1ppm)<br>※依照各地水質、使用方式，壽命也會改變
+                        tr
+                            td 濾殼材質
+                            td ABS樹脂
+                        tr
+                            td 尺寸
+                            td 約65(直徑) * 205(高) mm
+                        tr
+                            td 重量
+                            td 約250g
+                        tr
+                            td 使用水溫
+                            td 40℃以下
+                        tr
+                            td 使用可能最小水壓
+                            td 0.5kgf/cm2
+                        tr
+                            td 濾料產地
+                            td 日本進口
+                        tr
+                            td 產地
+                            td 台灣製造
