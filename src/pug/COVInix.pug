@@ -1,0 +1,106 @@
+extends includes/base.pug
+block variables
+    - var productName = 'COVInix'
+    - var productTitle = '美國COVInix PLUS UV-C紫外線殺菌棒'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/COVInix/cover.png" alt=productTitle)
+                .name= productTitle
+                .detail
+                    ul
+                        li 唯一獲得美國P4實驗室MRI GIobal認証，對 SARS-CoV-2（導致COVID-19的病毒）有效
+                        li 強效、快速、手持、全面防護
+                        li UV-C LED殺菌力4秒達99.99%
+                        li 輕鬆解決無法用酒精消毒的情況
+                    div
+                        - var n = 1;
+                        while n <= 15
+                            div
+                                img(src=`images/product/COVInix/${n++}.jpg` alt="產品介紹")
+                    .ct
+                        .price 建議售價：4500元
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們
+            .main-box
+                h5 商品描述
+                p 唯一獲得美國P4實驗室MRI GIobal認証，對 SARS-CoV-2（導致COVID-19的病毒）有效，強效、快速、手持、全面防護，輕鬆解決無法用酒精消毒的情況。
+                p 【商品特性】
+                ul.list-disc
+                    li 可滅除病毒、黴菌、細菌、孢子
+                    li UV-C LED殺菌力達99.99%
+                    li 一體化手持美型設計，方便隨身攜帶
+                    li 高續航力，充滿電可使用2000次
+                    li 20mV高強度 UVC LED專利認證
+                    li 設有安全機制，翻轉角度超過 90度自動斷電
+                    li 搭配一顆可見藍光，可看到正在消毒的區域
+                    li MIT台灣製造
+                p 【生活應用】<br>
+                    | 殺菌消臭作用於鈔票/零錢/口罩/外送/外帶食物/食用器具/生鮮食品/水果蔬菜/文件/信件/包裹/3C產品/植栽/木頭桌面/金屬表面等
+                p 【使用方式】
+                ol.list-deci
+                    li UV-C LED燈對著殺菌物體，最佳殺菌距離 3-8cm
+                    li 電源開關推至"ON"
+                    li 滑開保護滑蓋
+                    li 按下殺菌按鈕(可自由設定殺菌秒數，每按一下可增加5秒，可設定範圍10~90秒)
+                    li 倒數殺菌完畢即自動斷電
+                p 【使用注意】<br>
+                    | 請勿照射眼睛，人體皮膚過量照射會導致黑色素產生。
+
+            .main-box
+                h5 商品內容
+                ul.list-product-content
+                    li
+                        | UVC 紫外線殺菌棒
+                        span 1入
+                    li
+                        | 防塵絨布保護袋
+                        span 1入
+                    li
+                        | USB充電線
+                        span 1入
+                    li
+                        | 一年保固說明書
+                        span 1入
+
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 品名
+                        td COVInix PLUS UV-C紫外線殺菌棒
+                    tr
+                        td 重量
+                        td 169g
+                    tr
+                        td 尺寸
+                        td 36 x 250 mm
+                    tr
+                        td 波長
+                        td Deep UVC265-278nm
+                    tr
+                        td 電池規格
+                        td 2500mA
+                    tr
+                        td 燈珠顆數
+                        td 12顆UVC+1顆UVA
+                    tr
+                        td 額定功率
+                        td 12W
+                    tr
+                        td 輸入電壓電流
+                        td 5V/1A
+                    tr
+                        td 充電規格
+                        td 支援USB/ Type C充電
+                    tr
+                        td 保固時間
+                        td 1年

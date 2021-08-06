@@ -1,0 +1,96 @@
+extends includes/base.pug
+block variables
+    - var productName = 'UA-201'
+    - var productTitle = 'UVC空氣殺菌清淨器 UA-201'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/UA-201/cover.png" alt=productTitle)
+                .name= productTitle
+                .detail
+                    ul
+                        li HEPA13醫療級360度濾網
+                        li 市售車用清淨機唯一具備紫外線殺菌
+                        li SGS認證殺菌力99.9%
+                        li 空氣淨化、空間除臭、擴香
+                        li 車內 、辦公室 、  臥室 、大眾運輸
+                    div
+                        - var n = 1;
+                        while n <= 11
+                            div
+                                img(src=`images/product/UA-201/${n++}.jpg` alt="產品介紹")
+                    .ct
+                        .price 建議售價：4180元
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們
+            .main-box
+                h5 商品描述
+                p 市售車用清淨機唯一具備紫外線殺菌，UV-C LED快速殺菌，SGS認證殺菌率達99.9%。
+                p 【商品特性】
+                ul.list-disc
+                    li 體積小，方便攜帶
+                    li HEPA13醫療級濾網360度
+                    li 專利紫外光殺菌功能
+                    li 有效隔離懸浮粒子 PM2.5
+                    li 濾除各類細小細菌病毒
+                    li 活性碳去除車內異味
+                    li 可放入檜木擴香更使人放鬆
+                p 【生活應用】<br>
+                    | 車內 、辦公室、嬰兒房、  臥室 、大眾運輸，淨化空氣、過濾病菌。
+            .main-box
+                h5 商品內容
+                ul.list-product-content
+                    li
+                        | UVC空氣殺菌清淨器
+                        span 1入
+                    li
+                        | 加贈義大利薰香精油組(檜木擴香球X2、底座) 
+                        span 1入
+                    li
+                        | USB充電線
+                        span 1入
+                    li
+                        | 一年保固說明書
+                        span 1入
+
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 品名
+                        td UVC空氣殺菌清淨器
+                    tr
+                        td 濾網
+                        td HEPA13
+                    tr
+                        td 尺寸
+                        td 70X70x180mm
+                    tr
+                        td 重量
+                        td 280g
+                    tr
+                        td UVC光波長
+                        td 270~280nm
+                    tr
+                        td CADR
+                        td 6.75M3/h
+                    tr
+                        td 電壓
+                        td DC5V
+                    tr
+                        td 電流
+                        td 280g
+                    tr
+                        td 操作溫度
+                        td -10˚~ +60˚C
+                    tr
+                        td 保固時間
+                        td 1年
