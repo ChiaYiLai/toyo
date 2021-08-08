@@ -1,0 +1,79 @@
+extends includes/base.pug
+block variables
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/?l-id=tw_product_shop`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .wave-container
+            svg.waves(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto")
+                defs
+                    path#gentle-wave(d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z")
+                g.parallax
+                    use(xlink:href="#gentle-wave" x="48" y="3" fill="#4171aa")
+                    use(xlink:href="#gentle-wave" x="48" y="5" fill="#78cbc5")
+                    use(xlink:href="#gentle-wave" x="48" y="7" fill="#cccccc")
+
+        .main-container
+            .main-title
+                .title 商品情報
+                div(class="grid__item-letter" data-blotter="")
+                    span(class="content__text-inner") PRODUCT
+                i.fas.fa-tint
+            ul.list-product
+                li
+                    a(href="product.html") 全部商品
+                li 
+                    a(href="preventive-products.html") 防疫專區
+                li      
+                    a(href="alkaline-ionizer.html") 鹼性離子水生成器
+                li      
+                    a(href="drinking-water-filtration.html") 生飲淨水器
+                li   
+                    a(href="water-filtration.html") 居家凈水
+                li
+                    a(href="filters&merchandise.html") 濾心耗材
+                li  
+                    a(href="home-collections.html") 家居選物
+            .main-box.product-box
+                #product4
+                    ul
+                        li 濾心耗材
+                    .flex-box
+                        .each-product.flex-3
+                            a(href="TYH-202.html")
+                                img(src="images/product/TYH-202/cover.png" alt="鹼性離子水超酸水生成器TYH-202")
+                            .title
+                                a(href="TYH-202.html") 鹼性離子水超酸水生成器TYH-202
+                        .each-product.flex-3
+                                a(href="TW-508.html")
+                                    img(src="images/product/TW-508/cover.png" alt="鹼性離子水生成器TW-508")
+                                .title
+                                    a(href="TW-508.html") 鹼性離子水生成器TW-508
+                        .each-product.flex-3
+                                a(href="superwater.html")
+                                    img(src="images/product/sw/cover.png" alt="uper Water mini次氯酸水生成器")
+                                .title
+                                    a(href="superwater.html") uper Water mini次氯酸水生成器
+                        .each-product.flex-3
+                                a(href="TYH--71GS.html")
+                                    img(src="images/product/TYH-71GS/cover.png" alt="鹼性離子水生成器TYH-71GS")
+                                .title
+                                    a(href="TYH--71GS.html") 鹼性離子水生成器TYH-71GS
+                        .each-product.flex-3.mij
+                                a(href="SteriLe.html")
+                                    img(src="images/product/SteriLe/cover.png" alt="SteriLe日本速特靈")
+                                .title
+                                    a(href="SteriLe.html") SteriLe日本速特靈
+                        .each-product.flex-3
+                            a(href="COVInix.html")
+                                img(src="images/product/COVInix/cover.png" alt="美國COVInix PLUS UV-C紫外線殺菌棒")
+                            .title
+                                a(href="COVInix.html") 美國COVInix PLUS UV-C紫外線殺菌棒
+                        .each-product.flex-3
+                            a(href="UA-201.html")
+                                img(src="images/product/UA-201/cover.png" alt="UVC空氣殺菌清淨器 UA-201")
+                            .title
+                                a(href="UA-201.html") UVC空氣殺菌清淨器 UA-201
+                        
