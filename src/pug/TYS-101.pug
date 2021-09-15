@@ -1,0 +1,104 @@
+extends includes/base.pug
+block variables
+    - var productName = 'TYS-101'
+    - var productTitle = '除氯省水蓮蓬頭 TYS-101'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/TYS-101/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/TYS-101/cover.png" alt=productTitle)
+                .name= productTitle
+                .detail
+                    ul
+                        li SPA等級 居家舒壓享受
+                        li 綿密出水 全新淋浴體驗
+                        li 超強過濾效果，呵護全家人的肌膚
+                        li 日本專利除氯球技術 淨化洗浴用水
+                        li 減少致癌物質三鹵甲烷產生
+                        li 美型設計，打造居家衛浴質感美學
+                    div
+                        - var n = 1;
+                        while n < 15
+                            div
+                                img(src=`images/product/TYS-101/${n++}.jpg` alt="產品介紹")
+                        div
+                            img(src=`images/product/TYS-101/15.gif` alt="產品介紹")
+                        - var n = 16;
+                        while n <= 19
+                            div
+                                img(src=`images/product/TYS-101/${n++}.jpg` alt="產品介紹")
+                    .ct
+                        .price 建議售價：2180元
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們
+            .main-box
+                h5 商品描述
+                p 五大商品特色，有效淨化居家洗浴用水
+                p 【去除氯氣】<br>
+                    | 呵護肌膚，享受SPA級沐浴淨水
+                p 【加壓省水】<br>
+                    | 極密出水孔節約水量，省錢又環保
+                p 【貼心設計】<br>
+                    | 可拆式結構，美型好清洗
+                p 【呵護健康】<br>
+                    | 減少三鹵甲烷產生，保護人體及肌膚
+                p 【呵護秀髮】<br>
+                    | 去除餘氯雜質，使髮質健康，不易乾澀
+                ul
+                    li 超強過濾除氯效果，呵護全家人的肌膚
+                    li 三重過濾，濾除雜質、鐵鏽、水中餘氯
+                    li 打造黃金出水比例  綿密細緻 不造成強壓水注
+                    li 精準控制出水量 省錢同時擁有高品質  
+                    li 省水最高達50%
+                    li 通用規格，30秒無痛更換
+                    li 拆卸清洗超容易、髒污不殘留
+                    li 義大利 A’Design 設計獎認證
+                    li 不只實用，更是美型
+
+            .main-box
+                h5 商品內容
+                ul.list-product-content
+                    li
+                        | 除氯省水蓮蓬頭
+                        span 1入
+
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 品名
+                        td TOYO除氯省水蓮蓬頭
+                    tr
+                        td 尺寸
+                        td 100 x 85 x 250mm
+                    tr
+                        td 材質
+                        td ABS
+                    tr
+                        td 適用溫度
+                        td 4~40 度C
+                    tr
+                        td 適用流量
+                        td 6 L /min
+                    tr
+                        td 適用水壓
+                        td 20~80psi
+                    tr
+                        td 適用濾心
+                        td TA-101
+                    tr
+                        td 主要濾材
+                        td 日本亞硫酸鈣
+                    tr
+                        td 總淨水量
+                        td 10000 L
+                    tr
+                        td 產地
+                        td 台灣
