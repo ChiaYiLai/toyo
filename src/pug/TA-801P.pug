@@ -1,0 +1,104 @@
+extends includes/base.pug
+block variables
+    - var productName = 'TA-801P'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+    - var productTitle = '長效型複合式生飲濾心 TA-801P'
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/ta-801p/cover.png" alt=`${productTitle}`)
+                .name= productTitle
+                .detail
+                    ul
+                        li 長效抑垢、免插電、高品質淨水
+                        li 濾除煮水無法過濾之有害物質，避免存放時產生之細菌。
+                        li 通過台灣SGS國家級生飲檢驗。
+                        li 濾材經日本食品分析中心JFRL檢測。
+                        li 濾心需定期更換，避免影響飲水品質及安全。
+                        li 購買與更換細節，歡迎與我們聯繫。
+                    p
+                        img(src="images/product/ta-801p/1.jpg" alt=`${productTitle}`)
+                    p
+                        img(src="images/product/ta-801p/2.jpg" alt=`${productTitle}`)
+                    p
+                        img(src="images/product/ta-801p/3.jpg" alt=`${productTitle}`)
+                    .ct
+                        .price 建議售價：3980元
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們
+            .main-box
+                h5 商品內容
+                ul.list-product-content
+                    li 
+                        | 替換用濾心TA-801P
+                        span 1個
+
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 濾材
+                        td 日本GE-Techno活性碳纖維、日本銀離子、日本GE-Techno 0.5μ陶瓷濾料、日本クラレ銀離子活性碳、高密度日本食品級不織布、美國食品級複磷酸鹽
+                    tr
+                        td 過濾效能
+                        td 抑除水垢、濾除餘氯、三氯甲烷、揮發性有機物、有害化學物質、水中部份重金屬鉛、銅、汞、石綿、農藥、泥沙雜質、塑膠微粒等
+                    tr
+                        td 更換時間
+                        td 約12個月  ※依照各地水質、使用方式，壽命也會改變
+                    tr
+                        td 濾效參考
+                        td 20000L（餘氯<2ppm時）
+                    tr
+                        td 尺寸
+                        td 約110(寬)   300(高) mm
+                    tr
+                        td 重量
+                        td 約500g
+                    tr
+                        td 使用水溫
+                        td 4~42℃以下
+                    tr
+                        td 適用水壓
+                        td 1-3 kg/cm²
+                    tr
+                        td 裸棒產地
+                        td 日本
+                    tr
+                        td 組裝地區
+                        td 台灣
+                    tr
+                        td 保存期限
+                        td 未開封5年
+                    tr
+                        td 注意事項
+                        td 適用一般自來水（請勿使用山泉水、地下水）。依照消費者保護法的規定，您有從商品貨到次日七天內猶豫期的權益，但猶豫期並非試用期！請留意，您所退回的商品必須回復原狀（到貨時的原始狀態）並保持完整包裝（包括商品本體、包裝及所附文件或資料之完整），切勿缺漏任何配件或損毀外盒。提醒您，外盒及包裝都屬於商品的一部份，若有遺失、毀損或缺件，可能影響您退貨的權益，也可能依照損毀程度扣除為回復原狀所必要的費用。
+            .main-box
+                h5 週邊配件
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        a(href="TA-801-9F.html")
+                            img(src="images/product/ta-801-9f/cover.png" alt="TA-801-9F")
+                            p TA-801-9F
+                    .flex-2
+                        a(href="TA-801-9.html")
+                            img(src="images/product/ta-801-9/cover.png" alt="TA-801-9")
+                            p TA-801-9
+                    .flex-2
+                        a(href="TA-801P-9F.html")
+                            img(src="images/product/ta-801p-9f/cover.png" alt="TA-801P-9F")
+                            p TA-801P-9F
+                    .flex-2
+                        a(href="TA-801p-9.html")
+                            img(src="images/product/ta-801p-9/cover.png" alt="TA-801p-9")
+                            p TA-801p-9
+                    .flex-2
+                        a(href="TA-801.html")
+                            img(src="images/product/ta-801/cover.png" alt="TA-801")
+                            p TA-801

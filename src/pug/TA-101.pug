@@ -1,0 +1,67 @@
+extends includes/base.pug
+block variables
+    - var productName = 'TA-101'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+    - var productTitle = 'TOYO除氯省水蓮蓬頭 濾心2入組 TA-101'
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/ta-101/cover.png" alt=`${productTitle}`)
+                .name TOYO除氯省水蓮蓬頭 濾心2入組<br>TA-101
+                .detail
+                    ul
+                        li 日本專利除氯球技術，淨化洗浴用水。
+                        li 強力去除自來水中餘氯。
+                        li 能使肌膚更光滑、毛髮更柔順。
+                        li 有效減少氯氣遇熱，產生致癌物三鹵甲烷。
+                        li 濾心需定期更換，保障您衛浴用水品質及安全。
+                    div
+                        - var n = 0;
+                        while n <= 9
+                            div
+                                img(src=`images/product/ta-101/${n++}.jpg` alt="產品介紹")
+                    .ct
+                        .price 建議售價：1100元
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們
+            .main-box
+                h5 商品內容
+                ul.list-product-content
+                    li 
+                        | 替換用濾心TA-101
+                        span 1個
+
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 濾材
+                        td 日本亞硫酸鈣
+                    tr
+                        td 過濾效能
+                        td TOYO除氯省水蓮蓬頭專用濾心，濾除水中殘餘氯氣
+                    tr
+                        td 總淨水量
+                        td 10000L
+                    tr
+                        td 建議使用流量
+                        td 6L / min
+                    tr
+                        td 適用水壓
+                        td 20~80 psi (如為瓦斯熱水器，水壓不可低於20 psi )
+                    tr
+                        td 濾料產地
+                        td 日本
+                    tr
+                        td 組裝地區
+                        td 台灣
+                    tr
+                        td 注意事項
+                        td 適用一般自來水（請勿使用山泉水、地下水）。依照消費者保護法的規定，您有從商品貨到次日七天內猶豫期的權益，但猶豫期並非試用期！請留意，您所退回的商品必須回復原狀（到貨時的原始狀態）並保持完整包裝（包括商品本體、包裝及所附文件或資料之完整），切勿缺漏任何配件或損毀外盒。提醒您，外盒及包裝都屬於商品的一部份，若有遺失、毀損或缺件，可能影響您退貨的權益，也可能依照損毀程度扣除為回復原狀所必要的費用。
