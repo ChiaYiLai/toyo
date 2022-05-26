@@ -1,7 +1,7 @@
 {
-    "name": "TOYO",
+    "name": "toyo",
     "version": "1.0.0",
-    "description": "TOYO",
+    "description": "toyo",
     "author": "chia",
     "license": "ISC",
     "devDependencies": {
