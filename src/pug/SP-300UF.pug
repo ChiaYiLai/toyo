@@ -1,0 +1,66 @@
+extends includes/base.pug
+block variables
+    - var productName = 'SP-300UF'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/sp-300uf/cover.png" alt="")
+                .name SPACO專用UF複合式濾心 SP-300UF
+                .detail
+                    ul
+                        li 適用於TOYO SPACO廚下型系列機內濾心。
+                        li 活性碳+UF複合式雙效濾心
+                        li 可去除水中餘氯、臭味與異味.而孔徑約為0.01-0.1µ更可過濾水中細菌、病毒。
+                        li 可延長後續機器壽命、增加效能。
+                        li 濾心需定期更換，避免影響飲水品質及安全。
+                        li 濾心購買與更換細節，歡迎與我們聯繫。
+                    .ct
+                        .price
+                            | 建議售價：3680元
+                        a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/")
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品內容
+                p
+                    | SP-300UF 機內濾心 UF複合式濾心X 1 
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 型號
+                        td SP-300UF
+                    tr
+                        td 濾材
+                        td 活性碳、中空絲膜0.01〜0.1µ
+                    tr
+                        td 過濾效能
+                        td 可去除餘氯、除異味、三氯甲烷、揮發性有機物、有害化學物質，保留微量礦物質，同時截留下膠體、蛋白質、微生物、細菌及大分子有機物。
+                    tr
+                        td 過濾能力
+                        td 約12個月(使用時間未達12個月，約2500Gal（餘氯<2ppm時）)
+                            br
+                            | ※依照各地水質、使用方式，壽命也會改變
+                    tr
+                        td 適用水溫
+                        td 4~38℃以下
+                    tr
+                        td 適用水壓
+                        td 14-42psi( 1-3 kg/cm²)
+                    tr
+                        td 產地
+                        td 台灣
+                    tr
+                        td 保存期限
+                        td 未開封5年
