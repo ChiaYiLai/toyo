@@ -1,0 +1,118 @@
+extends includes/base.pug
+block variables
+    - var productName = 'SPACO-A-3'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/spaco-a-3/cover.png" alt="")
+                //- ul.img-list.flex-box
+                //-     li
+                //-         img(src="images/product/paco-x-3/cover.png" alt="")
+                //-     li
+                //-         img(src="http://www.toyo-autech.com.tw/cache/cutw_320h_320/jpg/1384850854.jpg" alt="")
+                .name SPACO 觸控桌上型-冰冷熱飲水機  A-3
+                .detail
+                    ul
+                        li 提供常溫水、冰水、熱水三種水溫用水情境
+                        li 一機多功能，隨按隨喝
+                        li 觸控式輕巧不鏽鋼水龍頭，時尚不占空間
+                        li 大容量3公升冰水，適合家庭、朋友聚會
+                        li 智慧型漏水偵測、UV燈更換提示，讓您永遠喝到安全高品質的水
+                    div
+                        - var n = 1;
+                        while n < 17
+                            div
+                                img(src=`images/product/spaco-a-3/${n++}.jpg` alt="產品介紹")
+                    .ct
+                        .price
+                            | 建議售價：28800元
+                        a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/")
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品內容
+                p
+                    | SPACO A-3 主機X 1
+                    br
+                    | OMAMORI – 2P 淨水御守-全效能生飲前置淨水組  X 1
+            .main-box
+                h5 商品描述
+                p 
+                    | SPACO 觸控桌上型-冰冷熱飲水機 A-3
+                    br
+                    | THE TASTE OF GALAXIES
+                    br
+                    | 歐美品味人士熱銷首選
+                    br
+                    br
+                    | 輕按一鍵，享受氣泡水、冰水、熱水
+                ul.list-disc
+                    li 泡茶、泡牛奶、氣泡雞尾酒、滿足所有人的健康飲水需求!
+                    li 適合家庭、餐廳、酒吧、招待會所、辦公空間等
+                    li 免煮水，冰冷熱飲水機隨時款待!!
+                p
+                    | 【保養及維護】
+                    br
+                    | 建議使用2年以上，需回原廠進行保養維護。未使用靜置1周以上，使用前請先排放水10-15分鐘，若仍有狀況需回原廠進行保養維護，靜置一個月以上可另行預約客服0800-090-881到府服務管線檢查。 
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 型號 / 品名
+                        td A-3 冰冷熱飲水機
+                    tr
+                        td 功能
+                        td 冰水 / 熱水 / 常溫
+                    tr
+                        td 顏色
+                        td 星光白
+                    tr
+                        td 尺寸
+                        td 23(W) x 34(D) x 48.5(H) 公分
+                    tr
+                        td 出水溫度
+                        td 冰水、3℃ -10℃；熱水80℃ -95℃；常溫
+                    tr
+                        td 製水量
+                        td 製冷量達每小時20升；加熱量達每小時12升
+                    tr
+                        td 進排水口徑
+                        td 1/4"
+                    tr
+                        td 電壓
+                        td AC115V/60HZ
+                    tr
+                        td 功率
+                        td 600Ｗ
+                    tr
+                        td 產地
+                        td 台灣研發 / 台灣製造
+                //- .align-center
+                //-     a(href="qa.html")
+                //-         .action-btn
+                //-             i.far.fa-question-circle  常見問題
+                //-     a(href="https://drive.google.com/file/d/1086rZIfrWnf85Q3f-1vAE_t6jQvhUCwx/view?usp=sharing" target="_blank")
+                //-         .action-btn
+                //-             i.fal.fa-wrench  操作手冊
+            .main-box
+                h5 週邊配件
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        a(href="OMAMORI-PAP.html")
+                            img(src="images/product/pap/cover.png" alt="OMAMORI – PAP")
+                            p OMAMORI – PAP 
+                    .flex-2
+                        a(href="#")
+                            img(src="images/product/filter/OMAMORI-JC.png" alt="OMAMORI - JC")
+                            p OMAMORI - JC
