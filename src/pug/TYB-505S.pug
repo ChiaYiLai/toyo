@@ -1,0 +1,119 @@
+extends includes/base.pug
+block variables
+    - var productName = 'TYB-505S'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/TYB_505S/`
+    - var lineUrl = 'https://line.me/R/ti/p/%40utb7360h'
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/TYB-505S/505S.png" alt="TYH-505S")
+                ul.img-list.flex-box
+                    li
+                        img(src="images/product/TYB-505S/505S.png" alt="TYH-505S")
+                .name 櫥下型 鹼性離子水生成器＋熱飲器TYB-505S
+                .detail
+                    ul
+                        li All in One 控制龍頭，櫥下空間省最大
+                        li LCD螢幕顯示，使用狀況一目暸然
+                        li 台日合作，符合台灣水質使用
+                        li AI人工智慧，可設定電解槽洗淨週期
+                        li 根據各地水質硬度，可設定電解強度
+                        li 根據各地水質差異，可設定濾心使用壽命
+                        li 國際認證，飲用安心有保證
+                    div
+                        - var n = 1;
+                        while n <= 10
+                            div
+                                img(src=`images/product/TYB-505S/${n++}.jpg` alt="產品介紹")
+                    .ct
+                        .price
+                            | 建議售價：41800元
+                        a(onclick=`return gtag_report_conversion(${rakutenUrl});` href=`${rakutenUrl}`)
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick=`return gtag_report_contact(${lineUrl});` href=`${lineUrl}`)
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品內容
+                ul
+                    li TYB-505S 主機 X 1
+                    li TYB-505S 龍頭 X 1
+                    li OMAMORI - 2S淨水御守 -安心生飲前置淨水組
+                    li OMAMORI - PA 雜質御守濾心 X 1
+                    li OMAMORI - JC 全效能御守濾心 X 1
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tbody
+                        tr
+                            td 消耗電力
+                            td 最大約250W（待機時1W未滿）
+                        tr
+                            td 本體尺寸
+                            td 寬180mm 深230mm 高340mm
+                        tr
+                            td 本體重量
+                            td 約9KG
+                        tr
+                            td 供水銅器尺寸
+                            td 外徑47mm 高217mm
+                        tr
+                            td 供水銅器重量
+                            td 約2KG
+                        tr
+                            td 供水銅器水龍頭鑽孔
+                            td 孔徑尺寸 35mm
+                        tr
+                            td 供水銅器材質
+                            td 低鉛銅鍍鉻
+                        tr
+                            td 供水銅器給止水裝置
+                            td 陶瓷軸心
+                        tr
+                            td 電解方式
+                            td 水道水過濾供給連續生成
+                        tr
+                            td 電解能力切換
+                            td 九階段鹼性水、酸性水、淨水
+                        tr
+                            td 連續使用可能使用時間
+                            td 約40分鐘（依各地水質不同亦有誤差）
+                        tr
+                            td 電機洗淨
+                            td 自動洗淨（可設置洗淨公升數）
+                        tr
+                            td 適用水壓
+                            td 0.5kg~3.5kg
+                        tr
+                            td 最高使用水溫
+                            td 40°C
+                        tr
+                            td 保護裝置
+                            td 過電流、溫度機體內部保護/誤飲鳴音警示等
+                .align-center
+                    a(href="qa.html")
+                        .action-btn
+                            i.far.fa-question-circle  常見問題
+                    a(href="https://drive.google.com/file/d/19oNYi71Yokz47l0YyWeO0iYWoF2rlfHs/view?usp=sharing" target="_blank")
+                        .action-btn
+                            i.fal.fa-wrench  操作手冊
+            .main-box
+                h5 週邊配件/耗材
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        img(src="images/product/others/PA.png" alt="OMAMORI - PA")
+                        p OMAMORI - PA
+                    .flex-2
+                        img(src="images/product/others/JC.png" alt="OMAMORI - JC")
+                        p OMAMORI - JC
+                    .flex-2
+                        img(src="images/product/pap/cover.png" alt="OMAMORI - PAP")
+                        p OMAMORI - PAP

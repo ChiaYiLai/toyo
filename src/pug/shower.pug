@@ -1,7 +1,7 @@
 extends includes/base.pug
 block variables
     - var productName = 'ECO-303'
-    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/ECO/`
 block js
     script(src="./js/product.js")
 
@@ -28,7 +28,7 @@ block content
                     .ct
                         .price
                             | 建議售價：23800元
-                        a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/ECO/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/ECO/")
+                        a(onclick=`return gtag_report_conversion(${rakutenUrl});` href=`${rakutenUrl}`)
                             .action-btn
                                 i.fal.fa-shopping-bag
                                 |  立即購買
