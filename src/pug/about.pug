@@ -1,0 +1,179 @@
+extends includes/base.pug
+block variables
+    - var rakutenUrl = 'https://www.rakuten.com.tw/shop/toyo-autech/?l-id=tw_product_shop'
+    - var bodyId = 'about'
+block js
+    script(src="./js/index.js")
+
+block content
+    .main
+        .wave-container
+            svg.waves(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto")
+                defs
+                    path#gentle-wave(d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z")
+                g.parallax
+                    use(xlink:href="#gentle-wave" x="48" y="3" fill="#4171aa")
+                    use(xlink:href="#gentle-wave" x="48" y="5" fill="#78cbc5")
+                    use(xlink:href="#gentle-wave" x="48" y="7" fill="#cccccc")
+        .main-container
+            .main-title
+                .title 企業情報
+                div(class="grid__item-letter", data-blotter="")
+                    span(class="content__text-inner") ABOUT
+                i.fas.fa-tint
+            .about-first
+                p TOYO東洋歐帝克自1995年創業以來，致力於打造舒適的質感生活，為用戶帶來健康又安全的飲水保健系列商品及親切、完善的售後服務。
+                p 我們提供的商品，除了可以透過優質的飲用水來提升生命力、創造生活品質，也可以大幅降低瓶裝水的塑膠污染 ; 經由物理電解的酸鹼性水，使用後排放後也不會造成化學污染，讓我們攜手為永續的幸福環境而努力。
+        #feature.main-container
+            .left-box
+                h2 好水情報 ABOUT ION WATER
+                p(style="max-width: 800px;margin-bottom: 45px;") 鹼性離子水於1965年由日本厚生勞動省(衛生署)依據藥事法，認定為「醫療用物資生成器」，生產工廠於取得醫療器具製造之認證許可後准許製造販賣。1999年東京第25回日本醫學會總會時，日本機能水研究振興財團於該總會發表持續6年之雙重盲檢比較臨床試驗結果，證實電解鹼性鈣離子水對於慢性下痢、便秘、腸內異常發酵、胃酸過多等具有實效。
+                .flex-box.ino-water
+                    .flex-2
+                        div
+                            i.fal.fa-bolt
+                            .title 含負電位
+                            p 即氧化還原電位，又稱ORP，有助於中和體內自由基
+                    .flex-2
+                        div
+                            i.far.fa-chart-network
+                            .title 水分子團小
+                            p 滲透性高，能快速吸收
+                    .flex-2
+                        div
+                            i.far.fa-stars
+                            .title 多重潔淨
+                            p 水中不含雜質、重金屬及其他污染，口感極佳
+                    .flex-2
+                        div
+                            i.far.fa-dewpoint
+                            .title 水呈鹼性
+                            p pH值呈現弱鹼性，幫助調整體質
+                    .flex-2
+                        div
+                            i.fal.fa-atom-alt
+                            .title 含礦物質
+                            p 礦物質離子化，易於人體吸收
+                    .flex-2
+                        div
+                            i.far.fa-h2
+                            .title 富含氫分子
+                            p 水中氫分子能中和體內過多的活性氧
+            hr
+            .left-box.right-box
+                h2 商品應用
+                p
+                    | 經由物理電解後，不同pH值的離子水可以多元的
+                    br
+                    | 運用在居家生活中
+                .flex-box.ph-box
+                    .flex-2
+                        ul
+                            li
+                                .pH
+                                    div pH
+                                    h5 2.7
+                                div
+                                    .title 強酸性水（不可飲用）
+                                    p 可運用在各式清潔洗淨，對於大腸菌、沙門氏菌、念珠菌等等有很好的除菌效果，使用在傷口清潔上也更加安全無化學刺激及殘留。
+                            li
+                                .pH
+                                    div pH
+                                    h5 6.0
+                                div
+                                    .title 弱酸性水（不可飲用）
+                                    p 最貼近人體肌膚的酸鹼值，具抑菌效果，適用於漱口、洗臉、沐浴質或去角質、刮鬍後使用，可輕柔的收斂毛孔，使肌膚平滑細嫩。
+                            li
+                                .pH
+                                    div pH
+                                    h5 7.0
+                                div
+                                    .title 中性淨水
+                                    p 含微量礦物質的優良淨水，服藥或沖泡牛奶時使用。
+                    .flex-2
+                        ul
+                            li
+                                .pH
+                                    div pH
+                                    h5 8.0
+                                div
+                                    .title 弱鹼性水
+                                    p 適合初期飲用，可調整腸胃不適。
+                            li
+                                .pH
+                                    div pH
+                                    h5 9.0
+                                div
+                                    .title 鹼性水
+                                    p 適合日常保健飲用、茶飲咖啡用水及料理烹飪 ，可引出食物風味，米飯也更加有彈性。
+                            li
+                                .pH
+                                    div pH
+                                    h5 10
+                                div
+                                    .title 鹼性水
+                                    p 適合用來煮湯、去除肉類腥味及蔬果澀味。
+                            li
+                                .pH
+                                    div pH
+                                    h5 11
+                                div
+                                    .title 強鹼性水（不可飲用）
+                                    p 可去除廚房油污、蛋白質及蔬果殘留農藥。
+            hr
+            include about-history.pug
+        .main-container
+            .main-title
+                .title
+                    | 聯絡我們
+                div(class="grid__item-letter", data-blotter="")
+                    span(class=`
+                        content__text-inner`) CONTACT
+                i.fas.fa-tint
+            .flex-box
+                .flex-2
+                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7342367872648!2d121.30827231541782!3d25.0091449839841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681e52e369cf07%3A0xf5e9b5ed8c65cbce!2z5p2x5rSL5q2Q5bid5YWL6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1sen!2stw!4v1572769008622!5m2!1sen!2stw", width="100%", height="325", frameborder="0", style="border:0;", allowfullscreen="")
+                .flex-2
+                    .main-box.contact-box
+                        .name
+                            | TOYO 東洋歐帝克股份有限公司
+                        hr
+                        p
+                            i.fal.fa-clock
+                            | 營業時間 09:00-18:00
+                        p
+                            i.fal.fa-phone
+                            | 免付費專線 0800-090881
+                        p
+                            i.fal.fa-map-marked-alt
+                            | 桃園市桃園區經國路11號6樓之1
+                        .social
+                            ul
+                                a(href="https://www.facebook.com/toyoautech/", target="_blank")
+                                    li
+                                        i.fab.fa-facebook-f
+                                a(href="https://www.instagram.com/toyo_water/", target="_blank")
+                                    li
+                                        i.fab.fa-instagram
+                                a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');", href="https://line.me/R/ti/p/%40utb7360h", target="_blank")
+                                    li
+                                        i.fab.fa-line
+                                a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/?l-id=tw_product_shop');", href="https://www.rakuten.com.tw/shop/toyo-autech/?l-id=tw_product_shop", target="_blank")
+                                    li
+                                        i.fal.fa-shopping-bag
+        .main-container
+            .main-title
+                .title
+                    | 成為經銷商
+                div(class="grid__item-letter", data-blotter="")
+                    span(class="content__text-inner") JOIN US
+                i.fas.fa-tint
+            .join-us
+                p
+                    | 台灣及海外代理經銷夥伴招募中！
+                p
+                    | 歡迎加入TOYO，一同創造更美好的社會！
+                p
+                    | 意者請洽 陳小姐
+                    a(href="mailto:yuan@toyo-autech.com.tw")
+                        | yuan@toyo-autech.com.tw
