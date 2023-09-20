@@ -67,9 +67,10 @@
 						p.eng
 							| SHOPS
 		.fixed-top-btn
-			a(onclick=`return gtag_report_conversion("${rakutenUrl}");` href=`${rakutenUrl}` target="_blank")
-				.action-btn
-					i.fal.fa-shopping-bag  線上購買
+			if !hideTopPurchaseBtn
+				a(onclick=`return gtag_report_conversion("${rakutenUrl}");` href=`${rakutenUrl}` target="_blank")
+					.action-btn
+						i.fal.fa-shopping-bag  線上購買
 			.hamburger
 				span.line
 				span.line

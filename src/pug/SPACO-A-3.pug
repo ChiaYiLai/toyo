@@ -2,6 +2,7 @@ extends includes/base.pug
 block variables
     - var productName = 'SPACO-A-3'
     - var rakutenUrl = `https://lin.ee/f8J76pW`
+    - var hideTopPurchaseBtn = true
 block js
     script(src="./js/product.js")
 
@@ -27,10 +28,10 @@ block content
                     .ct
                         .price
                             | 建議售價：28800元
-                        a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/")
-                            .action-btn
-                                i.fal.fa-shopping-bag
-                                |  立即購買
+                        //- a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/")
+                        //-     .action-btn
+                        //-         i.fal.fa-shopping-bag
+                        //-         |  立即購買
                         a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
                             .action-btn
                                 i.fab.fa-line
