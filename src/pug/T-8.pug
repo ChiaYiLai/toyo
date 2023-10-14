@@ -2,7 +2,7 @@ extends includes/base.pug
 block variables
     - var productName = 'T-8'
     - var rakutenUrl = `https://lin.ee/f8J76pW`
-    - var productTitle = 'UV殺菌系統桌上型三溫飲水機 T-8'
+    - var productTitle = 'UV殺菌系統桌上型三溫飲水機'
     - var hideTopPurchaseBtn = true
 block js
     script(src="./js/product.js")
@@ -21,6 +21,7 @@ block content
                 .name=  productTitle
                 .detail
                     ul
+                        li 供客製化OEM製作
                         li 這部輕巧、美觀的微電腦智慧型冰溫熱飲水機，直接連接自來水源，經過先進的濾淨系統及UV殺菌系統，只需輕輕按一下操作面板即可給您提供安全方便的健康飲水。
                     div
                         - var n = 1;
@@ -28,8 +29,6 @@ block content
                             div
                                 img(src=`images/product/t-8/${n++}.jpg` alt="產品介紹")
                     .ct
-                        .price
-                            | 建議售價：26800元
                         //- a(onclick=`return gtag_report_conversion(${rakutenUrl});`, href=`${rakutenUrl}`)
                         //-     .action-btn
                         //-         i.fal.fa-shopping-bag
