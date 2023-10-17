@@ -17,3 +17,4 @@ jobs:
         server: www.toyo-autech.com.tw
         username: oyoautechcomtw
         password: ${{ secrets.toyo_ftp_password }}
+        server-dir: httpdocs/web/
