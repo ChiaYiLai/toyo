@@ -1,0 +1,60 @@
+extends includes/base.pug
+block variables
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/?l-id=tw_product_shop`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .wave-container
+            svg.waves(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto")
+                defs
+                    path#gentle-wave(d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z")
+                g.parallax
+                    use(xlink:href="#gentle-wave" x="48" y="3" fill="#4171aa")
+                    use(xlink:href="#gentle-wave" x="48" y="5" fill="#78cbc5")
+                    use(xlink:href="#gentle-wave" x="48" y="7" fill="#cccccc")
+
+        .main-container
+            include ./product-header.pug
+            .main-box.product-box
+                #product1
+                    ul
+                        li 鹼性離子水生成器
+                    .flex-box.show
+                        .each-product.flex-3
+                            a(href="H-8.html")
+                                img(src="images/product/h-8/cover.png" alt="觸控廚下型-鹼性離子水雙溫飲水 H-8")
+                            .title
+                                a(href="H-8.html") 觸控廚下型-鹼性離子水雙溫飲水 H-8
+                        .each-product.flex-3
+                            a(href="H-5.html")
+                                img(src="images/product/h-5/cover.png" alt="觸控廚下型-鹼性離子水飲水機  H-5")
+                            .title
+                                a(href="H-5.html") 觸控廚下型-鹼性離子水飲水機  H-5
+                        .each-product.flex-3.mij
+                            a(href="TYH--71GS.html")
+                                img(src="images/product/TYH-71GS/cover.png" alt="鹼性離子水生成器TYH-71GS")
+                            .title
+                                a(href="TYH--71GS.html") 鹼性離子水生成器TYH-71GS
+                        .each-product.flex-3.mij
+                            a(href="TYH-202.html")
+                                img(src="images/product/TYH-202/cover.png" alt="鹼性離子水超酸水生成器TYH-202")
+                            .title
+                                a(href="TYH-202.html") 鹼性離子水超酸水生成器TYH-202
+                        .each-product.flex-3
+                            a(href="TW-H1.html")
+                                img(src="images/product/TW-H1/cover.png" alt="還元水素水生成器TW-H1")
+                            .title
+                                a(href="TW-H1.html") 還元水素水生成器TW-H1
+                        .each-product.flex-3
+                            a(href="TW-308.html")
+                                img(src="images/product/TW-308/cover.png" alt="鹼性離子水生成器TW-308")
+                            .title
+                                a(href="TW-308.html") 鹼性離子水生成器TW-308
+                        .each-product.flex-3
+                            a(href="TW-508.html")
+                                img(src="images/product/TW-508/cover.png" alt="鹼性離子水生成器TW-508")
+                            .title
+                                a(href="TW-508.html") 鹼性離子水生成器TW-508
+                        

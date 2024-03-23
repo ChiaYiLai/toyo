@@ -1,0 +1,129 @@
+extends includes/base.pug
+block variables
+    - var productName = 'H-5'
+    - var rakutenUrl = `https://www.rakuten.com.tw/shop/toyo-autech/product/H-5/?l-id=tw_shopcategory_grid_product_thumbnail_2`
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/h-5/cover.png" alt="H-5")
+                .name 觸控廚下型-鹼性離子水飲水機 H-5
+                .detail
+                    ul
+                        li 日本保健NO.1 
+                        li 鹼性離子水在家天天喝
+                        li 智能觸控龍頭，操作最easy
+                        li 廚下設計，解放廚房空間
+                        li 5種pH水質選擇，符合全家人需求
+                    div
+                        - var n = 1;
+                        while n <= 9
+                            div
+                                img(src=`images/product/h-5/${n++}.png` alt="產品介紹")
+                    .ct
+                        .price
+                            | 建議售價：45800元
+                        a(onclick="return gtag_report_conversion('https://www.rakuten.com.tw/shop/toyo-autech/product/H-8/');" href="https://www.rakuten.com.tw/shop/toyo-autech/product/H-8/")
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品描述
+                ul.list-disc
+                    li Made in Japan日本製鈦白金電極板
+                    li 觸控龍頭+雙溫設計
+                    li 廚下設計最省空間
+                    li 3段鹼性水、一般淨水、弱酸性水
+                    li 全自動濾心更換提醒功能
+                    li 全自動電解核心逆洗系統
+                    li 全自動機內漏水偵測
+                h6.title-xs 【內置生飲濾心組】
+                ul.list-disc
+                    li 二道複合式濾心，保障飲水品質
+                    li 新式濾頭設計輕鬆更換
+                    li 台灣SGS國家級生飲檢驗
+                h6.title-xs 【商品使用注意事項】
+                ol.list-deci
+                    li 適用一般自來水(請勿使用山泉水、地下水)
+                    li 水壓不足的場合建議另加購加壓馬達
+                    li 管路如需水電施工，費用另計
+                    li pH值會因水質及水壓不同而有所差異
+                    li 濾心請務必定期更換，保障飲水品質
+                    li 依照各地區水質、顧客使用方式，濾心更換周期有所不同，訂購時將一併評估說明
+                h6.title-xs 【保養及維護】
+                p 建議使用3年以上，需回原廠進行保養維護，將清洗電解槽、清洗熱缸、更換管線零配件。未使用靜置多日，使用前請先排放水3-5分鐘，亦可通知原廠進行保養維護，預約客服中心0800-090-881到府服務。
+
+            .main-box
+                h5 商品內容
+                ul
+                    li H-5 主機 X 1
+                    li H-5 龍頭 X 1
+                    li 機內二道式生飲濾心組 X 1
+                    li 商品保證書 X 1
+
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tbody
+                        tr
+                            td 品名
+                            td 觸控廚下型-鹼性離子水飲水機
+                        tr
+                            td 型號
+                            td H-5
+                        tr
+                            td 商品內容
+                            td 觸控龍頭+智能電解槽+內置濾心组
+                        tr
+                            td 製造地區
+                            td 台灣
+                        tr
+                            td 額定電壓頻率
+                            td AC110V 50-60Hz
+                        tr
+                            td 消耗電功率
+                            td 500W/110V/2A
+                        tr
+                            td 電解方式
+                            td 自來水過濾連續生成
+                        tr
+                            td 功能模式
+                            td 3階段鹼性水、一般淨水、酸性水
+                        tr
+                            td 適用水壓
+                            td 0.5KG~3KG
+                        tr
+                            td 適用水質
+                            td 自來水
+                        tr
+                            td 適用水溫
+                            td 5~40*C
+                        tr
+                            td 電解槽洗淨方式
+                            td 自動提醒、手動洗淨(可設定洗淨公升數)
+                        tr
+                            td 電解板材質
+                            td 日本製鈦白金級板
+                        tr
+                            td 主機尺寸
+                            td W189.5 X D269 X H288(mm)
+                        tr
+                            td 主機重量
+                            td 未進水8(KG)
+                        tr
+                            td 觸控龍頭尺寸
+                            td H223XD194 外徑47(mm)
+                        tr
+                            td 觸控龍頭重量
+                            td 1.6(KG)
+                        tr
+                            td 龍頭鑽孔尺寸
+                            td 孔徑尺寸35mm
