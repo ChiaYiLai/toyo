@@ -1,0 +1,147 @@
+extends includes/base.pug
+block variables
+    - var rakutenUrl = `https://lin.ee/a4uOuFB`
+    - var productTitle = 'SPACO 觸控櫥下型-雙溫飲水機 P-3 Pro'
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/spaco-p-3-pro/cover.png" alt="")
+                .name= productTitle
+                .detail
+                    ul
+                        li 全自動常溫水、熱水雙溫用水模式
+                        li 熱水大容量2.4公升隨按隨喝
+                        li 觸控式輕巧不鏽鋼水龍頭，時尚不佔空間
+                        li 生飲級淨水系統，守護飲水安全
+                        li 智慧型漏水偵測、濾芯壽命提醒，讓您永遠喝到安全高品質的水
+
+                    div
+                        - var n = 1;
+                        while n <= 13
+                            div
+                                img(src=`images/product/spaco-p-3-pro/${n++}.png` alt="產品介紹")
+                    .ct
+                        .price
+                            | 建議售價：41800元
+                        a(onclick=`return gtag_report_conversion(${rakutenUrl});` href=`${rakutenUrl}`)
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick=`return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');` href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品內容
+                p
+                    | SPACO P-3 Pro主機 X 1
+                    br
+                    | SPACO P-3 Pro龍頭 X 1
+                    br
+                    | OMAMORI-2P X 1
+            .main-box
+                h5 商品描述
+                p 
+                    | SPACO 觸控櫥下型-雙溫飲水機 P-3 Pro
+                    br
+                    | THE TASTE OF GALAXIES
+                    br
+                    | 歐美品味人士熱銷首選
+                    br
+                    br
+                    | 品味歐系生活的奢華飲水學
+                    br
+                    | 3-IN-ONE觸控全自動設計
+                    br
+                    | 輕按一鍵，享受常溫水、熱水
+                    br
+                    | ・泡茶、泡牛奶，滿足所有人的健康飲水需求!
+                    br
+                    | ・適合家庭、餐廳、酒吧、招待會所、辦公空間等
+                    br
+                    | ・讓您在家就像住飯店，頂級雙溫飲水機隨時款待!
+                    br
+                    br
+                    | 【保養及維護】
+                    br
+                    | 建議使用2年以上，需回原廠進行保養維護。未使用靜置1周以上，使用前請先排放水10-15分鐘，若仍有狀況需回原廠進行保養維護，靜置一個月以上可另行預約客服0800-090-881到府服務管線檢查。
+
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 型號 / 品名
+                        td P-3 Pro  觸控櫥下型-冰溫熱飲水機
+                    tr
+                        td 功能
+                        td 常溫水 / 熱水
+                    tr
+                        td 顏色
+                        td 石墨黑
+                    tr
+                        td 尺寸
+                        td 26(W) x 41(D) x 43(H) 公分
+                    tr
+                        td 出水溫度
+                        td 熱水80℃ -95℃
+                    tr
+                        td 缸體容量
+                        td 熱水系統2.4公升
+                    tr
+                        td 製冰內膽
+                        td SUS-304(不鏽鋼)
+                    tr
+                        td 加熱內膽
+                        td SUS-304(不鏽鋼)
+                    tr
+                        td 進排水口徑
+                        td 1/4"
+                    tr
+                        td 電壓
+                        td AC115V/60HZ
+                    tr
+                        td 功率
+                        td 600Ｗ
+                    tr
+                        td 標準配件
+                        td 2L氣瓶 / OMAMORI-2S
+                    tr
+                        td 龍頭內/外徑
+                        td 35mm/50mm
+                    tr
+                        td 適用水壓
+                        td 2kg/25psi
+                    tr
+                        td 產地
+                        td 台灣研發 / 台灣製造
+                .align-center
+                    a(href="qa.html")
+                        .action-btn
+                            i.far.fa-question-circle  常見問題
+                    a(href="https://drive.google.com/file/d/1N2xLa5qAtl7diPambwvN9XBFeOx7BPu_/view?usp=sharing" target="_blank")
+                        .action-btn
+                            i.fal.fa-wrench  操作手冊
+            .main-box
+                h5 週邊配件
+                .flex-box.flex-box-padding-reduce
+                    .flex-2
+                        a(href="SP-300UF.html")
+                            img(src="images/product/sp-300uf/cover.png" alt="SP-300UF")
+                            p SP-300UF
+                    .flex-2
+                        a(href="OMAMORI-PAP.html")
+                            img(src="images/product/pap/cover.png" alt="OMAMORI – PAP")
+                            p OMAMORI – PAP 
+                    .flex-2
+                        a(href="SPACO-UV.html")
+                            img(src="images/product/spaco-uv/cover.png" alt="SPACO專用UV燈管")
+                            p SPACO專用UV燈管
+                    .flex-2
+                        a(href="#")
+                            img(src="images/product/spaco-air/cover-2.png" alt="SPACO專用氣瓶")
+                            p SPACO專用氣瓶

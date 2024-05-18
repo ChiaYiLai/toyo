@@ -4,27 +4,11 @@
 	font-size: 16px
 	margin: 0 0 .5rem
 	font-weight: normal
-.made-in-japan
+
+.product-tag
 	position: relative
 	&::after
-		content: '日本製'
-		background: #c0272d
-		height: 50px
-		width: 50px
-		padding: 7px
-		position: absolute
-		top: 0
-		right: 50%
-		margin-right: -130px
-		color: #fff
-		border-radius: 100%
-		line-height: 1.35em 
-		box-sizing: border-box
-		font-size: 14px
-.bubble
-	position: relative
-	&::after
-		content: '氣泡機種'
+		content: '熱賣'
 		background: #4E82BC
 		height: 50px
 		width: 50px
@@ -38,3 +22,20 @@
 		line-height: 1.35em 
 		box-sizing: border-box
 		font-size: 14px
+		display: flex
+		justify-content: center
+		align-items: center
+	&.made-in-japan
+		&::after
+			content: '日本製'
+			background: #c0272d
+	&.upgrade
+		&::after
+			content: '新款升級'
+	&.new-show
+		&::after
+			content: '新品登場'
+	&.soldout
+		&::after
+			content: '完售!'
+			background: #000

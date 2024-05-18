@@ -1,0 +1,30 @@
+extends includes/base.pug
+block variables
+    - var link = `https://lin.ee/a4uOuFB`
+    - var productTitle = 'H plus專用日本銀離子碳纖維濾心 H-300-JCA'
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/filter/H-300-JCA.png" alt=`${productTitle}`)
+                .name= productTitle
+                .detail
+                    ul
+                        li 適用於TOYO H plus廚下型系列機內濾心。
+                        li 日本銀離子碳纖維濾心。
+                        li 濾除自來水中餘氯、三氯甲烷、揮發性有機物、濾除有害化學物質、水中部份重金屬、農藥、塑膠微粒等
+                        li 可延長後續機器壽命、增加效能。
+                        li 濾心壽命：6個月，約9000L，實際需視各地區水質、使用情況而定。
+                        li 濾心需定期更換，避免影響飲水品質及安全。
+                        li 濾心購買與更換細節，歡迎與我們聯繫。
+
+                    .ct
+                        .price 建議售價：2500元
+                        a(onclick=`return gtag_report_contact(${link});` href=`${link}`)
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們

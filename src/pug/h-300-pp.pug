@@ -1,0 +1,29 @@
+extends includes/base.pug
+block variables
+    - var link = `https://lin.ee/a4uOuFB`
+    - var productTitle = 'H plus專用PP棉濾心 H-300-PP'
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/filter/H-300-PP.png" alt=`${productTitle}`)
+                .name= productTitle
+                .detail
+                    ul
+                        li 適用於TOYO H plus廚下型系列機內濾心。
+                        li PP棉濾心。
+                        li 可去除水中較粗雜質固體物:如鐵屑、砂石、毛髮、沉澱物..等。
+                        li 可延長後續機器壽命、增加效能。
+                        li 濾心壽命：3~6個月，實際需視各地區水質、使用情況而定。
+                        li 濾心需定期更換，避免影響飲水品質及安全。
+                        li 濾心購買與更換細節，歡迎與我們聯繫。
+                    .ct
+                        .price 建議售價：500元
+                        a(onclick=`return gtag_report_contact(${link});` href=`${link}`)
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們
