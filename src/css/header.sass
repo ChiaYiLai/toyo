@@ -1,0 +1,32 @@
+.fixed-top-btn
+    > a
+        display: none
+        align-items: center
+        gap: 8px
+        background-color: $main
+        color: #fff
+        padding: 8px 24px
+        border-radius: 100px
+        +lg
+            display: flex
+
+.fixed-bottom-btn
+    position: fixed
+    bottom: 0
+    left: 0
+    z-index: 999
+    width: 100%
+    display: flex
+    +lg
+        display: none
+    > a
+        flex: 1 0 50%
+        background-color: darken($main, 5%)
+        color: #fff
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 8px
+        height: 56px
+        &:last-child
+            background-color: lighten($main, 5%)
