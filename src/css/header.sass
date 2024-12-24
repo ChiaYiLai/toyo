@@ -4,11 +4,25 @@
         align-items: center
         gap: 8px
         background-color: $main
+        border: 2px solid $main
         color: #fff
         padding: 8px 24px
         border-radius: 100px
+        transition: .4s
         +lg
             display: flex
+        &:hover
+            background-color: #fff
+            color: $main
+            .green
+                display: block
+            .white
+                display: none
+        .green
+            display: none
+
+.mouse
+    bottom: 50px
 
 .fixed-bottom-btn
     position: fixed
@@ -21,7 +35,7 @@
         display: none
     > a
         flex: 1 0 50%
-        background-color: darken($main, 5%)
+        background-color: #46ae97
         color: #fff
         display: flex
         align-items: center
@@ -29,4 +43,4 @@
         gap: 8px
         height: 56px
         &:last-child
-            background-color: lighten($main, 5%)
+            background-color: #61bfae
