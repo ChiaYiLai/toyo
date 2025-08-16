@@ -1,0 +1,28 @@
+extends includes/base.pug
+block variables
+    - var productName = 'R-800-2 RO膜濾心800G RO  '
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/r-1/r-800-1.png" alt=productName)
+                .name= productName
+                .detail
+                    ul
+                        li 適用於TOYO SPACO R1廚下型機內濾心。
+                        li RO膜濾心800G。
+                        li 有效去除水中的有害物質，如細菌、重金屬、無機鹽類及化學殘留物。
+                        li 可延長後續機器壽命、增加效能。
+                        li 濾心壽命：12~24個月，實際需視各地區水質、使用情況而定。
+                        li 濾心需定期更換，避免影響飲水品質及安全。
+                        li 濾心購買與更換細節，歡迎與我們聯繫。
+                    .ct
+                        .price 建議售價：2100元
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                | 聯絡我們

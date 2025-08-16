@@ -1,0 +1,184 @@
+extends includes/base.pug
+block variables
+    - var rakutenUrl = `https://lin.ee/a4uOuFB`
+    - var productTitle = 'SPACO 櫥下型-RO直輸淨水器 R1 (800G)'
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src="images/product/r-1/cover.png" alt=productTitle)
+                .name= productTitle
+                .detail
+                    p 極淨純水，時尚入廚，為你濾出生活的純粹！
+                        br
+                        | 800G大出水量新鮮直飲，用水無需等待
+                    ul
+                        li 無桶直輸，不佔空間
+                        li 高規格800加侖大出水量
+                        li 奈米級RO膜濾心
+                        li 有效濾除99.9%水中有害物質
+                        li 增添活性碳，口感更優質
+                        li 智能濾心更換提醒
+                        li 智能濾心自動沖洗設計
+                        li 一體式水路，降低漏水風險
+                        li 彈壓式設計，濾心一鍵更換
+                    div
+                        - var n = 1;
+                        while n <= 1
+                            div
+                                img(src=`images/product/r-1/${n++}.png` alt="產品介紹")
+                    .ct
+                        .price
+                            | 建議售價：21800元
+                        a(onclick=`return gtag_report_conversion(${rakutenUrl});` href=`${rakutenUrl}`)
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick=`return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');` href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品內容
+                p
+                    | SPACO R1龍頭 X 1
+                    br
+                    | SPACO R1主機 X 1
+                    br
+                    | (內含3道濾心)
+            .main-box
+                h5 商品描述
+                p 
+                    | SPACO 櫥下型-RO直輸淨水器 R1 (800G)
+                    br
+                    | THE TASTE OF GALAXIES
+                    br
+                    | 極淨純水，時尚入廚，為你濾出生活的純粹
+                    br
+                    | 可選免費升級雙出龍頭！
+                    br
+                    br
+                    | ・800G(加侖)高規格造水量濾心
+                    br
+                    | ・每分鐘出水2L/min
+                    br
+                    | ・新鮮直飲不必煮水
+                    br
+                    | ・霧黑時尚龍頭，符合LF無鉛標準
+                    br
+                    | ・廚下主機無桶直輸，不佔空間
+                    br
+                    | ・彈壓濾心，一鍵更換超省力
+                    br
+                    | ・智能主機濾心更換提醒顯示
+                    br
+                    | ・自動偵測機內漏水斷水設計
+                    br
+                    br
+                    | 【3重濾心，極淨純飲】
+                    br
+                    | 【增添活性碳 優化口感】
+                    br
+                    | 【奈米級RO膜濾心】
+                    br
+                    | 0.1奈米(=0.0001微米) RO膜濾心
+                    br
+                    | 有效濾除99.9%水中有害物質
+                    br
+                    | 通過國家級24項飲用水檢測
+                    br
+                    br
+                    | 【保養及維護】
+                    br
+                    | 建議使用2年以上，需回原廠進行保養維護。未使用靜置1周以上，使用前請先排放水10-15分鐘，若仍有狀況需回原廠進行保養維護，靜置一個月以上可另行預約客服0800-090-881到府服務管線檢查。
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tr
+                        td 品名
+                        td SPACO 橱下型 RO直輸淨水器 (800G)
+                    tr
+                        td 型號
+                        td R1
+                    tr
+                        td 商品內容
+                        td 主機/變壓器/安装配件
+                    tr
+                        td 顏色
+                        td 鈦黑
+                    tr
+                        td 額定電壓頻率
+                        td 96W / 2.5A
+                    tr
+                        td 功能模式
+                        td 純水/淨水
+                    tr
+                        td 製水流量
+                        td 2L/min
+                    tr
+                        td 純水製水量
+                        td 5000L
+                    tr
+                        td 第1道濾心
+                        td R-800-1，複合式活性碳濾心PC，使用壽命6-12個月
+                    tr
+                        td 第2道濾心
+                        td R-800-2，RO膜濾心800G RO，使用壽命 12-24個月
+                    tr
+                        td 第3道濾心
+                        td R-800-3，椰殼活性碳濾心CC，使用壽命 6-12個月
+                    tr
+                        td 適用水壓
+                        td 1.5 ~ 2.5kg
+                    tr
+                        td 功率
+                        td 800Ｗ
+                    tr
+                        td 標準配件
+                        td 2L氣瓶
+                    tr
+                        td 龍頭內/外徑
+                        td 35mm/50mm
+                    tr
+                        td 適用水壓
+                        td 2kg/25psi
+                    tr
+                        td 工作水壓
+                        td 4 ~ 9kg
+                    tr
+                        td 適用水質
+                        td 自來水
+                    tr
+                        td 適用水溫
+                        td 5 ~ 40*C
+                    tr
+                        td 主機尺寸
+                        td W140 X D440 X H405 mm
+                    tr
+                        td 主機重量
+                        td 未進水13kg
+                    tr
+                        td 製造地區
+                        td 中國生產/台灣監製
+            .main-box
+                h5 安裝實例
+                .flex-box.flex-box-padding-reduce
+                    - var n = 1;
+                    while n <= 2
+                        .flex-2
+                            img(src=`images/product/r-1/settings-${n}.png` alt="安裝實例")
+                            - n++
+            .main-box
+                h5 週邊配件/耗材
+                .flex-box.flex-box-padding-reduce
+                    - var n = 1;
+                    while n <= 3
+                        .flex-2
+                            a(href=`r-800-${n}.html`)
+                                img(src=`images/product/r-1/r-800-${n}.png` alt=`R-800-${n}`)
+                                p R-800-#{n}
+                            - n++
