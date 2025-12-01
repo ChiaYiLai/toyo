@@ -27,6 +27,9 @@ block content
                     div
                         - var n = 1;
                         while n < 18
+                            if n === 6 || n === 7
+                                - n++;
+                                - continue;
                             div
                                 img(src=`images/product/TYH-71GS/${n++}.jpg` alt="產品介紹")
                     .ct

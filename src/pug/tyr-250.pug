@@ -1,0 +1,161 @@
+extends includes/base.pug
+block variables
+    - var productName = 'tyr-250'
+block js
+    script(src="./js/product.js")
+
+block content
+    .main
+        .product-container
+            .product-main
+                .img-zone
+                    img(src=`images/product/${productName}/cover.png` alt=`${productName}`)
+                .name 全戶式軟水系統 TYR-250
+                .detail
+                    p 軟水淨化生活，品質全面升級
+                    ul
+                        li 精品級全戶軟水系統
+                        li 小體積大過濾量 
+                        li 智慧運作依比例吸鹽 
+                        li 專屬軟水機BYPASS設計 
+                        li 再生補軟水 
+                        li 乾鹽箱模式 
+                    div
+                        - var n = 1;
+                        while n <= 1
+                            div
+                                img(src=`images/product/${productName}/${n++}.png` alt="產品介紹")
+                    .ct
+                        .price
+                            | 建議售價：58000元
+                        a(onclick=`return gtag_report_conversion(https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/);` href=`https://www.rakuten.com.tw/shop/toyo-autech/product/${productName}/`)
+                            .action-btn
+                                i.fal.fa-shopping-bag
+                                |  立即購買
+                        a(onclick="return gtag_report_contact('https://line.me/R/ti/p/%40utb7360h');" href="https://line.me/R/ti/p/%40utb7360h")
+                            .action-btn
+                                i.fab.fa-line
+                                |  聯絡我們
+            .main-box
+                h5 商品描述
+                ul
+                    li
+                        span.text-main 智慧全戶軟水機，讓生活更柔軟 !
+                        p
+                            | 精品級柔滑的高質感用水
+                            | 小體積大過濾量
+                            | 活動式面板中英文介面 
+                            | 透天房屋住宅大樓適合1-6人使用
+
+                    li
+                        span.text-main SPA 級居家沐浴體驗：
+                        | 大幅降低水中硬度，沐浴時更親膚，髮絲更柔順。
+                    li 
+                        span.text-main 智慧比例吸鹽系統：
+                        | 軟水機依實際用水量自動調整吸鹽比例。
+                    li
+                        span.text-main 專屬 BYPASS 設計：
+                        | 維修、清洗不斷水，靈活切換模式，居家用水不中斷更便利。
+                    li
+                        span.text-main 乾鹽箱模式：
+                        | 降低結塊風險、鹽耗更穩定，確保長期運作效能。
+                    li
+                        span.text-main 再生補軟水：
+                        | 自動逆洗維持最佳軟化效果，延長家電壽命，鍋具、浴室不再留白垢水痕。
+                    li
+                        span.text-main 軟水淨化生活，品質全面升級
+
+                p ｜衣物柔軟｜
+                    br
+                    | 減少過敏原、鈣鎂殘留，洗衣更乾淨、衣物更柔順
+
+                p ｜美髮護膚｜
+                    br
+                    | 洗澡不乾澀、不緊繃，頭髮滑順有光澤
+
+                p ｜減少水垢｜
+                    br
+                    | 浴室、水龍頭不留白垢，家電不結垢，省電又耐用
+
+                p ｜客製化軟水系統｜
+                    br
+                    | 多種規劃方案，完美匹配全戶用水需求
+
+                p 【注意事項】
+                    br
+                    | 此商品適用一般自來水。
+                    br
+                    | 安裝費用另計。
+                    br
+                    | 可客製化規劃其他水質設備。
+
+                p 【保養及維護】
+                    br
+                    | 請務必依照說明書使用，定期更換耗材，確保您的軟水品質。有任何問題可詢問客服中心 0800-090-881。
+
+            .main-box
+                h5 商品內容
+                p 全戶式軟水系統、商品說明書、保證書。
+            .product-info.main-box
+                h5 商品規格
+                table
+                    tbody
+                        tr
+                            td 型號
+                            td TYR-250
+                        tr
+                            td 電壓
+                            td AC100-240V
+                        tr
+                            td 總額定消耗電功率
+                            td 40w
+                        tr
+                            td 尺寸
+                            td 寬36 X 深60 X 高105 (cm)
+                        tr
+                            td 重量
+                            td 14kg
+                        tr
+                            td 樹脂量
+                            td 25L
+                        tr
+                            td 儲鹽量
+                            td 20KG(乾鹽箱設計)
+                        tr
+                            td 週期產水量
+                            td 3.9〜9.7 t
+                        tr
+                            td 總週期產水次數
+                            td 200〜300次
+                        tr
+                            td 適用人口數
+                            td 1～6人
+                        tr
+                            td 工作流量
+                            td 1.5～3m3/hr
+                        tr
+                            td 進水壓力
+                            td 1.5～3.5 kgf/cm2
+                        tr
+                            td 進水温度
+                            td 5〜38°C
+                        tr
+                            td 進出水口徑
+                            td 3/4”（六分）
+                        tr
+                            td 排水口徑
+                            td 1/2”（四分）
+                        tr
+                            td 適用水質
+                            td 自來水
+                        tr
+                            td 製造地區
+                            td 中國製
+                .align-center
+                    a(href="qa.html")
+                        .action-btn
+                            i.far.fa-question-circle  常見問題
+                    a(target="_blank" href="https://drive.google.com/file/d/1qkV2aOknnU-SpbsMcXUx9aSkmiyi7OPq/view?usp=sharing")
+                        .action-btn
+                            i.fal.fa-wrench  操作手冊
+                    
